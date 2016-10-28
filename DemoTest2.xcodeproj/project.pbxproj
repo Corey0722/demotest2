@@ -14,6 +14,13 @@
 		044C7CB31CA3A2C40031F911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044C7CB11CA3A2C40031F911 /* LaunchScreen.storyboard */; };
 		044C7CBE1CA3A2C40031F911 /* DemoTest2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C7CBD1CA3A2C40031F911 /* DemoTest2Tests.swift */; };
 		044C7CC91CA3A2C40031F911 /* DemoTest2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C7CC81CA3A2C40031F911 /* DemoTest2UITests.swift */; };
+		046832D41D32823E004FA580 /* MealInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046832D31D32823E004FA580 /* MealInformation.swift */; };
+		04BCDC481D3B75F600683037 /* meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCDC471D3B75F600683037 /* meal.swift */; };
+		04BCDC4E1D3BCDCC00683037 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCDC4D1D3BCDCC00683037 /* CustomTableCell.xib */; };
+		04BCDC501D3BCFC400683037 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCDC4F1D3BCFC400683037 /* CustomTableCell.swift */; };
+		04F865CC1D0ED5E4002A0D9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F865CB1D0ED5E4002A0D9B /* MapKit.framework */; };
+		04F865CE1D1037D9002A0D9B /* momo壽喜燒.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F865CD1D1037D9002A0D9B /* momo壽喜燒.jpg */; };
+		04F865D01D1037EA002A0D9B /* 王品.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F865CF1D1037EA002A0D9B /* 王品.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		044C7CC41CA3A2C40031F911 /* DemoTest2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTest2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C7CC81CA3A2C40031F911 /* DemoTest2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTest2UITests.swift; sourceTree = "<group>"; };
 		044C7CCA1CA3A2C40031F911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046832D31D32823E004FA580 /* MealInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealInformation.swift; sourceTree = "<group>"; };
+		04BCDC471D3B75F600683037 /* meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = meal.swift; path = ../meal.swift; sourceTree = "<group>"; };
+		04BCDC4D1D3BCDCC00683037 /* CustomTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
+		04BCDC4F1D3BCFC400683037 /* CustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		04F865CB1D0ED5E4002A0D9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		04F865CD1D1037D9002A0D9B /* momo壽喜燒.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "momo壽喜燒.jpg"; sourceTree = "<group>"; };
+		04F865CF1D1037EA002A0D9B /* 王品.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "王品.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F865CC1D0ED5E4002A0D9B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,9 @@
 		044C7C9C1CA3A2C40031F911 = {
 			isa = PBXGroup;
 			children = (
+				04BCDC4D1D3BCDCC00683037 /* CustomTableCell.xib */,
+				04BCDC4F1D3BCFC400683037 /* CustomTableCell.swift */,
+				04F865CB1D0ED5E4002A0D9B /* MapKit.framework */,
 				044C7CA71CA3A2C40031F911 /* DemoTest2 */,
 				044C7CBC1CA3A2C40031F911 /* DemoTest2Tests */,
 				044C7CC71CA3A2C40031F911 /* DemoTest2UITests */,
@@ -98,8 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				044C7CA81CA3A2C40031F911 /* AppDelegate.swift */,
+				04F865CF1D1037EA002A0D9B /* 王品.jpg */,
+				04BCDC471D3B75F600683037 /* meal.swift */,
+				04F865CD1D1037D9002A0D9B /* momo壽喜燒.jpg */,
 				044C7CAA1CA3A2C40031F911 /* ViewController.swift */,
 				044C7CAC1CA3A2C40031F911 /* Main.storyboard */,
+				046832D31D32823E004FA580 /* MealInformation.swift */,
 				044C7CAF1CA3A2C40031F911 /* Assets.xcassets */,
 				044C7CB11CA3A2C40031F911 /* LaunchScreen.storyboard */,
 				044C7CB41CA3A2C40031F911 /* Info.plist */,
@@ -229,9 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F865D01D1037EA002A0D9B /* 王品.jpg in Resources */,
 				044C7CB31CA3A2C40031F911 /* LaunchScreen.storyboard in Resources */,
 				044C7CB01CA3A2C40031F911 /* Assets.xcassets in Resources */,
+				04BCDC4E1D3BCDCC00683037 /* CustomTableCell.xib in Resources */,
 				044C7CAE1CA3A2C40031F911 /* Main.storyboard in Resources */,
+				04F865CE1D1037D9002A0D9B /* momo壽喜燒.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BCDC481D3B75F600683037 /* meal.swift in Sources */,
+				04BCDC501D3BCFC400683037 /* CustomTableCell.swift in Sources */,
 				044C7CAB1CA3A2C40031F911 /* ViewController.swift in Sources */,
+				046832D41D32823E004FA580 /* MealInformation.swift in Sources */,
 				044C7CA91CA3A2C40031F911 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +512,7 @@
 				044C7CCF1CA3A2C40031F911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		044C7CD01CA3A2C40031F911 /* Build configuration list for PBXNativeTarget "DemoTest2Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +521,7 @@
 				044C7CD21CA3A2C40031F911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		044C7CD31CA3A2C40031F911 /* Build configuration list for PBXNativeTarget "DemoTest2UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +530,7 @@
 				044C7CD51CA3A2C40031F911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
