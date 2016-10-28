@@ -129,6 +129,7 @@ class meal : UITableViewController {
         
         
 //        將CustomTableCell中的兩個ＬＡＢＥＬ值設為ＣＥＬＬＤＡＴＥ陣列中的值
+        //awdawdawdwaadawdawd
     
         
 //        MIPic.image = cellDataPic[indexPath.row]
