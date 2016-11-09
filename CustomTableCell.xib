@@ -35,9 +35,6 @@
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuH-9X-tqp">
                         <rect key="frame" x="203" y="51" width="62" height="30"/>
                         <state key="normal" title="查看更多"/>
-                        <connections>
-                            <action selector="buttommoreAdT:" destination="Rqf-CU-8eI" eventType="touchUpInside" id="Nd1-1m-b0m"/>
-                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>

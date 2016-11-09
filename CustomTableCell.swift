@@ -20,16 +20,7 @@ class CustomTableCell: UITableViewCell {
     }
     @IBOutlet weak var buttonmore: UIButton!
 
-    @IBAction func buttommoreAdT(sender: AnyObject){
 
-     
-       meal.showMealInformation(<#T##meal#>)
-        
-        //製作點擊後顯示餐點資訊Controller的方法
-       
-       
-        
-    }
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -542,15 +542,9 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="MIAbout" destination="xMX-fG-IQM" id="jFN-fL-cj9"/>
                         <outlet property="MIID" destination="2Q3-Hg-vku" id="vA4-pO-x5B"/>
                         <outlet property="MIPic" destination="ZKZ-Hk-DXx" id="Mll-Mw-VBp"/>
                         <outlet property="MIPrice" destination="393-fS-3Fp" id="ged-WG-7YY"/>
-                        <outlet property="mealID" destination="2Q3-Hg-vku" id="gsd-tQ-8Lh"/>
-                        <outlet property="mealID2" destination="2Q3-Hg-vku" id="5bK-lu-ayx"/>
-                        <outlet property="mealInformation" destination="xMX-fG-IQM" id="m0f-M6-V3P"/>
-                        <outlet property="mealPrice" destination="393-fS-3Fp" id="HNm-2a-xav"/>
-                        <outlet property="mealPrice2" destination="393-fS-3Fp" id="tJv-0w-9hp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sn-eq-8iU" userLabel="First Responder" sceneMemberID="firstResponder"/>

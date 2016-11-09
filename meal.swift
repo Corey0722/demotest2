@@ -8,7 +8,7 @@
 
 import UIKit
 
-class meal : UITableViewController {
+class meal : UITableViewController  {
 
    
     @IBOutlet var myTableViewMeal: UITableView!
@@ -22,10 +22,10 @@ class meal : UITableViewController {
     
     //cell要顯示的資料陣列
     
-//    @IBOutlet weak var MIPic: UIImageView!
-//    @IBOutlet weak var MIID: UILabel!
-//    @IBOutlet weak var MIPrice: UILabel!
-   // @IBOutlet weak var MIAbout: UILabel!
+    @IBOutlet weak var MIPic: UIImageView!
+    @IBOutlet weak var MIID: UILabel!
+    @IBOutlet weak var MIPrice: UILabel!
+//    @IBOutlet weak var MIAbout: UILabel!
     
     //菜單資訊中的label
     
@@ -48,31 +48,21 @@ class meal : UITableViewController {
         //註冊，forCellReuseIdentifier是TableView中設定的Cell名稱
         
         cellDataMealID.append("海鮮" )
-//        cellDataMealID.append("牛肉麵" )
-//        cellDataMealID.append("陽春麵" )
+        cellDataMealID.append("牛肉麵" )
+        cellDataMealID.append("陽春麵" )
         cellDataPrice.append("70")
-//        cellDataPrice.append("90")
-//        cellDataPrice.append("60")
+        cellDataPrice.append("90")
+        cellDataPrice.append("60")
         cellDataPic.append(UIImage(named: "王品.jpg")!)
-//        cellDataPic.append(UIImage(named: "momo壽喜燒.jpg")!)
-//        cellDataPic.append(UIImage(named: "momo壽喜燒.jpg")!)
+        cellDataPic.append(UIImage(named: "momo壽喜燒.jpg")!)
+        cellDataPic.append(UIImage(named: "momo壽喜燒.jpg")!)
         
         
         //加入cell要顯示的資料到陣列中
-//        MealButtom.addTarget(self, action: #selector(showMealInformation(<#T##sender: UIButton##UIButton#>)) , forControlEvents: .TouchUpInside)
-//        
-//        設定buttom觸發時呼叫方法
 
         
     }
     
-    func showMealInformation(sender:UIButton){
-        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ＭealInformation")
-        
-        self.presentViewController(controller!, animated: true, completion: nil)
-        
-        //製作點擊後顯示餐點資訊Controller的方法
-    }
     
 //    @IBAction func showMealInformation(sender:AnyObject){
 //        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ＭealInformation")
@@ -82,12 +72,8 @@ class meal : UITableViewController {
 //        //製作點擊後顯示餐點資訊Controller的方法
 //    }
     
-//      @IBAction func ChangeToMealInformation (sender:AnyObject)
-//      {
-//          let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MealInformation") as! MealInformation
-//          self.presentViewController(controller, animated: true, completion: nil)
-//      }
-//    buttom轉頁方法
+    
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -100,11 +86,14 @@ class meal : UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
+        
+        //回傳tableview總數
+        
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 3
         
         //回傳ＣＥＬＬ總數
         
@@ -123,27 +112,46 @@ class meal : UITableViewController {
         
         
         
-        
-        cell.buttonmore = MealButtom
-        MealButtom.addTarget( action: showMealInformation(<#T##sender: UIButton##UIButton#>), forControlEvents: .TouchUpInside)
-        
-        
 //        將CustomTableCell中的兩個ＬＡＢＥＬ值設為ＣＥＬＬＤＡＴＥ陣列中的值
-        //awdawdawdwaadawdawd
     
+        cell.buttonmore.addTarget(self, action: (#selector(meal.showMealInformation(_:))), forControlEvents: .TouchUpInside)
         
+//        button觸發案件
+        
+//         var cellDataInformation = [[cellDataPic], [cellDataMealID], [cellDataPrice]]
+        
+        
+//        
 //        MIPic.image = cellDataPic[indexPath.row]
 //        MIID.text = cellDataMealID[indexPath.row]
-//        MIPrice.text = cellDataPrice[indexPath.row]
+//        MIPrice.text = cellDataInformation[indexPath.row][3]
   
-        //將ＭealInformation的label代入對應的值
+//      將ＭealInformation的label代入對應的值
 
         return cell
         
         //回傳cell
         
         
+        
     }
+    func showMealInformation(sender:AnyObject?){
+       
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MealMessage")
+        
+       self.presentViewController(controller!, animated: true, completion: nil)
+        
+        
+        
+        //製作點擊後顯示餐點資訊Controller的方法
+        
+       
+        
+        
+       
+        
+    }
+
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
