@@ -8,24 +8,29 @@
 
 import UIKit
 
-class meal : UITableViewController  {
+class meal : UITableViewController {
 
-   
-    @IBOutlet var myTableViewMeal: UITableView!
+//   
+    @IBOutlet weak var myTableViewMeal: UITableView!
+////    @IBOutlet var myTableViewMeal: UITableView!
+//    @IBOutlet weak var myTableViewMeal: UITableView!
     
     var cellDataMealID = [String]()
     var cellDataPrice = [String]()
     var cellDataPic = [UIImage]()
-    var MealButtom : UIButton!
+    
 
-//    var cellDataButton = [UIButton]()
+    var Meal_ID: String?
+    var Meal_Price: String?
+    var Meal_Pic: UIImage?
+    var Rev_Name: String?
+
     
     //cell要顯示的資料陣列
     
-    @IBOutlet weak var MIPic: UIImageView!
-    @IBOutlet weak var MIID: UILabel!
-    @IBOutlet weak var MIPrice: UILabel!
-//    @IBOutlet weak var MIAbout: UILabel!
+
+    
+
     
     //菜單資訊中的label
     
@@ -37,13 +42,13 @@ class meal : UITableViewController  {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        let  nib = UINib(nibName: "CustomTableCell", bundle: nil)
+//        let  nib = UINib(nibName: "CustomTableCell", bundle: nil)
         
         // 註冊xib
         
-        myTableViewMeal.registerNib(nib, forCellReuseIdentifier: "Cell")
-        myTableViewMeal.dataSource = self
-        myTableViewMeal.delegate = self
+//        myTableViewMeal.registerNib(nib, forCellReuseIdentifier: "Cell")
+//        myTableViewMeal.dataSource = self
+//        myTableViewMeal.delegate = self
         
         //註冊，forCellReuseIdentifier是TableView中設定的Cell名稱
         
@@ -57,8 +62,8 @@ class meal : UITableViewController  {
         cellDataPic.append(UIImage(named: "momo壽喜燒.jpg")!)
         cellDataPic.append(UIImage(named: "momo壽喜燒.jpg")!)
         
-        
         //加入cell要顯示的資料到陣列中
+        
 
         
     }
@@ -93,66 +98,48 @@ class meal : UITableViewController  {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return cellDataMealID.count
         
         //回傳ＣＥＬＬ總數
         
     }
     
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = myTableViewMeal.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! MealCell
+        //將類別myTableViewMeal轉型為MealCell
         
-        let cell = myTableViewMeal.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! CustomTableCell;
-        
-        //將類別myTableViewMeal轉型為CustomTableCell
-        
-        cell.MealID.text = cellDataMealID[indexPath.row]
-        cell.MealPrice.text = cellDataPrice[indexPath.row]
-        cell.MealPic.image = cellDataPic[indexPath.row]
-//        cell.buttonmore = celldataButtom[indexPath.row]
-        
-        
-        
-//        將CustomTableCell中的兩個ＬＡＢＥＬ值設為ＣＥＬＬＤＡＴＥ陣列中的值
-    
-        cell.buttonmore.addTarget(self, action: (#selector(meal.showMealInformation(_:))), forControlEvents: .TouchUpInside)
-        
-//        button觸發案件
-        
-//         var cellDataInformation = [[cellDataPic], [cellDataMealID], [cellDataPrice]]
-        
-        
-//        
-//        MIPic.image = cellDataPic[indexPath.row]
-//        MIID.text = cellDataMealID[indexPath.row]
-//        MIPrice.text = cellDataInformation[indexPath.row][3]
-  
-//      將ＭealInformation的label代入對應的值
+        Meal_ID = cellDataMealID[indexPath.row]
+        Meal_Price = cellDataPrice[indexPath.row]
+        Meal_Pic = cellDataPic[indexPath.row]
+        cell.MealID.text = Meal_ID
+        cell.MealPrice.text = Meal_Price
+        cell.MealPic.image = Meal_Pic
 
-        return cell
-        
+        if cell.MealFav.on{
+            
+        }
+              return cell
         //回傳cell
-        
-        
-        
     }
-    func showMealInformation(sender:AnyObject?){
-       
-        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MealMessage")
-        
-       self.presentViewController(controller!, animated: true, completion: nil)
-        
-        
-        
-        //製作點擊後顯示餐點資訊Controller的方法
-        
-       
-        
-        
-       
-        
+//    func showMealInformation(sender:AnyObject?){
+//        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MealMessage") as! MealInformation
+//       self.presentViewController(controller, animated: true, completion: nil)
+//        //製作點擊後顯示餐點資訊Controller的方法
+//    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MealInformationSegue"{
+            if let indexPath = self.myTableViewMeal.indexPathForSelectedRow{
+            let navVC = segue.destinationViewController as! MealInformation
+                navVC.MiIDName = cellDataMealID[indexPath.row]
+                navVC.MiPriceName = cellDataPrice[indexPath.row]
+                navVC.MiPicName = cellDataPic[indexPath.row]
+                navVC.Rv_Name = Rev_Name
+            }
+            
+        }
     }
-
-
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)

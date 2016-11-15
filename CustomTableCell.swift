@@ -11,8 +11,12 @@ import UIKit
 class CustomTableCell: UITableViewCell {
 
     @IBOutlet weak var MealPic: UIImageView!
-    @IBOutlet weak var MealID: UILabel!
+//    @IBOutlet weak var MealPic: UIImageView!
     @IBOutlet weak var MealPrice: UILabel!
+//    @IBOutlet weak var MealPic: UIView!
+    @IBOutlet weak var MealID: UILabel!
+//    @IBOutlet weak var MealID: UILabel!
+//    @IBOutlet weak var MealPrice: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
        

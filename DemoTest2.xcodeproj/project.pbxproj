@@ -16,11 +16,19 @@
 		044C7CC91CA3A2C40031F911 /* DemoTest2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C7CC81CA3A2C40031F911 /* DemoTest2UITests.swift */; };
 		046832D41D32823E004FA580 /* MealInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046832D31D32823E004FA580 /* MealInformation.swift */; };
 		04BCDC481D3B75F600683037 /* meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCDC471D3B75F600683037 /* meal.swift */; };
-		04BCDC4E1D3BCDCC00683037 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BCDC4D1D3BCDCC00683037 /* CustomTableCell.xib */; };
 		04BCDC501D3BCFC400683037 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCDC4F1D3BCFC400683037 /* CustomTableCell.swift */; };
+		04DA17351DD881D200B15343 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DA17341DD881D200B15343 /* GoogleService-Info.plist */; };
+		04DA17371DD9DF9A00B15343 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA17361DD9DF9A00B15343 /* MealCell.swift */; };
+		04DA173B1DD9F0E200B15343 /* ResTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA173A1DD9F0E200B15343 /* ResTableView.swift */; };
+		04DA173D1DDAB4B200B15343 /* RevCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA173C1DDAB4B200B15343 /* RevCell.swift */; };
+		04DA17411DDAD9A200B15343 /* taipei-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04DA173E1DDAD9A200B15343 /* taipei-0.jpg */; };
+		04DA17421DDAD9A200B15343 /* taipei-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04DA173F1DDAD9A200B15343 /* taipei-1.jpg */; };
+		04DA17431DDAD9A200B15343 /* taipei-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04DA17401DDAD9A200B15343 /* taipei-2.jpg */; };
+		04DA17451DDADE3F00B15343 /* MyCartViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA17441DDADE3F00B15343 /* MyCartViewTable.swift */; };
 		04F865CC1D0ED5E4002A0D9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F865CB1D0ED5E4002A0D9B /* MapKit.framework */; };
 		04F865CE1D1037D9002A0D9B /* momo壽喜燒.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F865CD1D1037D9002A0D9B /* momo壽喜燒.jpg */; };
 		04F865D01D1037EA002A0D9B /* 王品.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F865CF1D1037EA002A0D9B /* 王品.jpg */; };
+		57998A351069FAA37DB6B76B /* Pods_DemoTest2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35A4CD558BBA9B6BC7A277 /* Pods_DemoTest2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +64,21 @@
 		044C7CCA1CA3A2C40031F911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046832D31D32823E004FA580 /* MealInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealInformation.swift; sourceTree = "<group>"; };
 		04BCDC471D3B75F600683037 /* meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = meal.swift; path = ../meal.swift; sourceTree = "<group>"; };
-		04BCDC4D1D3BCDCC00683037 /* CustomTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
 		04BCDC4F1D3BCFC400683037 /* CustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		04DA17341DD881D200B15343 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04DA17361DD9DF9A00B15343 /* MealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		04DA173A1DD9F0E200B15343 /* ResTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResTableView.swift; sourceTree = "<group>"; };
+		04DA173C1DDAB4B200B15343 /* RevCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevCell.swift; sourceTree = "<group>"; };
+		04DA173E1DDAD9A200B15343 /* taipei-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taipei-0.jpg"; sourceTree = "<group>"; };
+		04DA173F1DDAD9A200B15343 /* taipei-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taipei-1.jpg"; sourceTree = "<group>"; };
+		04DA17401DDAD9A200B15343 /* taipei-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taipei-2.jpg"; sourceTree = "<group>"; };
+		04DA17441DDADE3F00B15343 /* MyCartViewTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCartViewTable.swift; sourceTree = "<group>"; };
 		04F865CB1D0ED5E4002A0D9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		04F865CD1D1037D9002A0D9B /* momo壽喜燒.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "momo壽喜燒.jpg"; sourceTree = "<group>"; };
 		04F865CF1D1037EA002A0D9B /* 王品.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "王品.jpg"; sourceTree = "<group>"; };
+		0A35A4CD558BBA9B6BC7A277 /* Pods_DemoTest2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTest2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAFB7001DCA858BBECA31E9 /* Pods-DemoTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTest2.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTest2/Pods-DemoTest2.release.xcconfig"; sourceTree = "<group>"; };
+		648C0BE39C9424152D070452 /* Pods-DemoTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTest2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTest2/Pods-DemoTest2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F865CC1D0ED5E4002A0D9B /* MapKit.framework in Frameworks */,
+				57998A351069FAA37DB6B76B /* Pods_DemoTest2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,13 +111,14 @@
 		044C7C9C1CA3A2C40031F911 = {
 			isa = PBXGroup;
 			children = (
-				04BCDC4D1D3BCDCC00683037 /* CustomTableCell.xib */,
 				04BCDC4F1D3BCFC400683037 /* CustomTableCell.swift */,
 				04F865CB1D0ED5E4002A0D9B /* MapKit.framework */,
 				044C7CA71CA3A2C40031F911 /* DemoTest2 */,
 				044C7CBC1CA3A2C40031F911 /* DemoTest2Tests */,
 				044C7CC71CA3A2C40031F911 /* DemoTest2UITests */,
 				044C7CA61CA3A2C40031F911 /* Products */,
+				3207802FC115A417E5B50EE2 /* Pods */,
+				5FCFD28D44ADAB37290F5ADB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,13 +138,21 @@
 				044C7CA81CA3A2C40031F911 /* AppDelegate.swift */,
 				04F865CF1D1037EA002A0D9B /* 王品.jpg */,
 				04BCDC471D3B75F600683037 /* meal.swift */,
+				04DA173C1DDAB4B200B15343 /* RevCell.swift */,
 				04F865CD1D1037D9002A0D9B /* momo壽喜燒.jpg */,
 				044C7CAA1CA3A2C40031F911 /* ViewController.swift */,
 				044C7CAC1CA3A2C40031F911 /* Main.storyboard */,
+				04DA17441DDADE3F00B15343 /* MyCartViewTable.swift */,
+				04DA173E1DDAD9A200B15343 /* taipei-0.jpg */,
+				04DA173F1DDAD9A200B15343 /* taipei-1.jpg */,
+				04DA17401DDAD9A200B15343 /* taipei-2.jpg */,
+				04DA17361DD9DF9A00B15343 /* MealCell.swift */,
 				046832D31D32823E004FA580 /* MealInformation.swift */,
+				04DA173A1DD9F0E200B15343 /* ResTableView.swift */,
 				044C7CAF1CA3A2C40031F911 /* Assets.xcassets */,
 				044C7CB11CA3A2C40031F911 /* LaunchScreen.storyboard */,
 				044C7CB41CA3A2C40031F911 /* Info.plist */,
+				04DA17341DD881D200B15343 /* GoogleService-Info.plist */,
 			);
 			path = DemoTest2;
 			sourceTree = "<group>";
@@ -147,6 +175,23 @@
 			path = DemoTest2UITests;
 			sourceTree = "<group>";
 		};
+		3207802FC115A417E5B50EE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				648C0BE39C9424152D070452 /* Pods-DemoTest2.debug.xcconfig */,
+				3FAFB7001DCA858BBECA31E9 /* Pods-DemoTest2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5FCFD28D44ADAB37290F5ADB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A35A4CD558BBA9B6BC7A277 /* Pods_DemoTest2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044C7CCD1CA3A2C40031F911 /* Build configuration list for PBXNativeTarget "DemoTest2" */;
 			buildPhases = (
+				6372EC9533CF3279B976163F /* [CP] Check Pods Manifest.lock */,
 				044C7CA11CA3A2C40031F911 /* Sources */,
 				044C7CA21CA3A2C40031F911 /* Frameworks */,
 				044C7CA31CA3A2C40031F911 /* Resources */,
+				37F9E07643CD45FB37A2047F /* [CP] Embed Pods Frameworks */,
+				7C1C27E24BF528017CA838E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,10 +300,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F865D01D1037EA002A0D9B /* 王品.jpg in Resources */,
+				04DA17411DDAD9A200B15343 /* taipei-0.jpg in Resources */,
 				044C7CB31CA3A2C40031F911 /* LaunchScreen.storyboard in Resources */,
 				044C7CB01CA3A2C40031F911 /* Assets.xcassets in Resources */,
-				04BCDC4E1D3BCDCC00683037 /* CustomTableCell.xib in Resources */,
+				04DA17351DD881D200B15343 /* GoogleService-Info.plist in Resources */,
+				04DA17421DDAD9A200B15343 /* taipei-1.jpg in Resources */,
 				044C7CAE1CA3A2C40031F911 /* Main.storyboard in Resources */,
+				04DA17431DDAD9A200B15343 /* taipei-2.jpg in Resources */,
 				04F865CE1D1037D9002A0D9B /* momo壽喜燒.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,14 +327,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37F9E07643CD45FB37A2047F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoTest2/Pods-DemoTest2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6372EC9533CF3279B976163F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1C27E24BF528017CA838E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoTest2/Pods-DemoTest2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		044C7CA11CA3A2C40031F911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DA17371DD9DF9A00B15343 /* MealCell.swift in Sources */,
+				04DA17451DDADE3F00B15343 /* MyCartViewTable.swift in Sources */,
 				04BCDC481D3B75F600683037 /* meal.swift in Sources */,
 				04BCDC501D3BCFC400683037 /* CustomTableCell.swift in Sources */,
+				04DA173B1DD9F0E200B15343 /* ResTableView.swift in Sources */,
 				044C7CAB1CA3A2C40031F911 /* ViewController.swift in Sources */,
+				04DA173D1DDAB4B200B15343 /* RevCell.swift in Sources */,
 				046832D41D32823E004FA580 /* MealInformation.swift in Sources */,
 				044C7CA91CA3A2C40031F911 /* AppDelegate.swift in Sources */,
 			);
@@ -427,6 +530,7 @@
 		};
 		044C7CCE1CA3A2C40031F911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648C0BE39C9424152D070452 /* Pods-DemoTest2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DemoTest2/Info.plist;
@@ -438,6 +542,7 @@
 		};
 		044C7CCF1CA3A2C40031F911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAFB7001DCA858BBECA31E9 /* Pods-DemoTest2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DemoTest2/Info.plist;

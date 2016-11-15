@@ -1,26 +1,16 @@
 //
-//  MealInformation.swift
+//  MyCartViewTable.swift
 //  DemoTest2
 //
-//  Created by Corey on 2016/7/10.
+//  Created by Corey on 2016/11/15.
 //  Copyright © 2016年 Corey. All rights reserved.
 //
 
 import UIKit
 
-class MealInformation: UITableViewController {
+class MyCartViewTable: UITableViewController {
 
-    @IBOutlet weak var RvName: UILabel!
-    @IBOutlet weak var MiID: UILabel!
-    @IBOutlet weak var MiPic: UIImageView!
-    @IBOutlet weak var MiAbout: UILabel!
-    @IBOutlet weak var MiPrice: UILabel!
-    var MiIDName:String!
-    var MiPriceName:String!
-    var MiPicName:UIImage!
-    var Rv_Name:String!
-    
-    
+    @IBOutlet var MyCartTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,18 +19,15 @@ class MealInformation: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        self.MiID.text = MiIDName
-        self.MiPrice.text = MiPriceName
-        self.MiPic.image = MiPicName
-        self.RvName.text = Rv_Name
-        
-        
+     
     }
-    
-    
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
     // MARK: - Table view data source
- 
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -49,8 +36,7 @@ class MealInformation: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
-        
+        return 3
     }
 
     /*

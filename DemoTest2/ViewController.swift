@@ -20,6 +20,16 @@ class ViewController: UIViewController , UITextFieldDelegate ,MKMapViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        if locationManager == nil {
+//            locationManager = CLLocationManager()
+//            locationManager!.delegate = self
+//            locationManager!.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+//            locationManager!.requestAlwaysAuthorization()
+//            locationManager!.distanceFilter = 50 // Don't send location updates with a distance smaller than 50 meters between them
+//            locationManager!.startUpdatingLocation()
+//        }
+
     }
     override func viewWillAppear(animated: Bool)
     {
@@ -32,20 +42,20 @@ class ViewController: UIViewController , UITextFieldDelegate ,MKMapViewDelegate 
     }
     override func viewDidAppear(animated: Bool)
     {
-        if locationManager == nil {
-            locationManager = CLLocationManager()
-            locationManager!.delegate = self
-            locationManager!.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-            locationManager!.requestAlwaysAuthorization()
-            locationManager!.distanceFilter = 50 // Don't send location updates with a distance smaller than 50 meters between them
-            locationManager!.startUpdatingLocation()
-        }
-    }
-    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
-        if let mapView = self.mapView {
-            let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, distanceSpan, distanceSpan)
-            mapView.setRegion(region, animated: true)
-        }
+//        if locationManager == nil {
+//            locationManager = CLLocationManager()
+//            locationManager!.delegate = self
+//            locationManager!.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+//            locationManager!.requestAlwaysAuthorization()
+//            locationManager!.distanceFilter = 50 // Don't send location updates with a distance smaller than 50 meters between them
+//            locationManager!.startUpdatingLocation()
+//        }
+//    }
+//    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+//        if let mapView = self.mapView {
+//            let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, distanceSpan, distanceSpan)
+//            mapView.setRegion(region, animated: true)
+//        }
     }
     func  textFieldShouldReturn(textField: UITextField) -> Bool {
         
