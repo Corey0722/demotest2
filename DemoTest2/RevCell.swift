@@ -10,7 +10,7 @@ import UIKit
 
 class RevCell: UITableViewCell {
 
-    @IBOutlet weak var RevFav: UISwitch!
+    
    
     @IBOutlet weak var RevLoc: UILabel!
     @IBOutlet weak var RevName: UILabel!

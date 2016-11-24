@@ -1,25 +1,31 @@
 //
-//  MyCartViewTable.swift
+//  MyMainController.swift
 //  DemoTest2
 //
-//  Created by Corey on 2016/11/15.
+//  Created by Corey on 2016/11/22.
 //  Copyright © 2016年 Corey. All rights reserved.
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
-class MyCartViewTable: UITableViewController {
+class MyMainController: UITableViewController {
 
-    @IBOutlet var MyCartTableView: UITableView!
+    @IBAction func SignOut(sender: AnyObject) {
+        try! FIRAuth.auth()?.signOut()
+        handleLogin()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-     
+        print(FIRAuth.auth()?.currentUser?.uid)
+        if FIRAuth.auth()?.currentUser?.uid == nil{
+            performSelector(#selector(handleLogin) , withObject: nil,
+                            afterDelay:  0)
+        }
+        else{
+            print (FIRAuth.auth()?.currentUser?.uid)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,14 +35,15 @@ class MyCartViewTable: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 3
+  
+    func  handleLogin(){
+        do{
+            try! FIRAuth.auth()?.signOut()
+        } catch let louginRrror{
+            print (louginRrror)
+        }
+        let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        self.presentViewController(loginController, animated: true, completion: nil)
     }
 
     /*

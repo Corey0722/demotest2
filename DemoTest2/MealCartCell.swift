@@ -1,5 +1,5 @@
 //
-//  MealCell.swift
+//  MealCartCell.swift
 //  DemoTest2
 //
 //  Created by Corey on 2016/11/23.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MealCell: UITableViewCell {
+class MealCartCell: UITableViewCell {
 
-    @IBOutlet weak var MealPic: UIImageView!
-    @IBOutlet weak var MealName: UILabel!
+    @IBOutlet weak var MealCount: UILabel!
     @IBOutlet weak var MealPrice: UILabel!
+    @IBOutlet weak var MealName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
