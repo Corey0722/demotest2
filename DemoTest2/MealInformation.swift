@@ -34,7 +34,7 @@ class MealInformation: UITableViewController {
     var Check_MealId : [String] = []
     let databaseOfCart = FIRDatabase.database().reference()
      let GuestUid = FIRAuth.auth()?.currentUser?.uid
-     var x: Int = 0
+    
    
     var Order_ToCart = [Order]()
     
@@ -49,7 +49,10 @@ class MealInformation: UITableViewController {
         self.RvName.text = Rv_Name
         self.RvLoc.text = Rv_Loc
         self.RvTel.text = Rv_Tel
-   prepareInfo()
+        
+        prepareInfo()
+        print(GuestUid)
+        
     }
     // MARK: - Table view data source
  
@@ -120,27 +123,27 @@ MealInfoPostCart()
         let Res_Name_To_Cart = RvName.text!
         let Res_Tel_To_Cart = RvTel.text!
         let Res_Loc_To_Cart = RvLoc.text!
-        let CartPost : [String:AnyObject] = ["Cart_MealPrice" : MiId_Price,
-                                             "Cart_MealCount" : Mi_Count,
-                                             "Cart_ResName" : Res_Name_To_Cart,
-                                             "Cart_ResTel" : Res_Tel_To_Cart,
+        let CartPostResInfo : [String:AnyObject] = ["Cart_ResName" :Res_Name_To_Cart,
+                                                "Cart_ResTel" : Res_Tel_To_Cart,
                                              "Cart_ResLoc" : Res_Loc_To_Cart,
                                              "OrderUIDForRes": Rv_UID]
-        databaseOfCart.child("User_Guest").child(GuestUid!).child("Guest_Cart").child(MiIDName!).setValue(CartPost)
+        let CartPostMealInfo : [String:AnyObject] = ["MealPrice" : MiId_Price,
+                                                     "MealCount" : Mi_Count,
+                                                     "MealId" : MiID_Name]
+        databaseOfCart.child("User_Guest").child(GuestUid!).child("Guest_Cart").child("Cart_Res").setValue(CartPostResInfo)
+        databaseOfCart.child("User_Guest").child(GuestUid!).child("Guest_Cart").child("Cart_Meal").child(MiID_Name).setValue(CartPostMealInfo)
     }
     func prepareInfo(){
-        databaseOfCart.child("User_Guest").child(GuestUid!).child("Guest_Cart").observeEventType(.ChildAdded, withBlock:
+        databaseOfCart.child("User_Guest").child(GuestUid!).child("Guest_Cart").observeEventType(.ChildAdded , withBlock:
             {(snapshot) in
-                
-                print(snapshot)
-                if let  dictionary = snapshot.value as? [String:AnyObject]{
-                    let Check = Cart()
-                    Check.setValuesForKeysWithDictionary(dictionary)
-           
-                    self.Check_ResUID.append(Check.OrderUIDForRes!)
-                    print (self.Check_ResUID)
+                if let dictionary = snapshot.value as? [String:String]{
+                    let check = Cart()
+                    check.setValuesForKeysWithDictionary(dictionary)
+                    self.Check_ResUID.append(check.OrderUIDForRes!)
 
+                    
                 }
+                
         })
 
     }

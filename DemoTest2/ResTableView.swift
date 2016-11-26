@@ -30,7 +30,9 @@ class ResTableView: UITableViewController {
                 ResInfo.setValuesForKeysWithDictionary(dictionary)
                 self.ResInformation.append(ResInfo)
                 print(self.ResInformation)
+                
                 dispatch_async(dispatch_get_main_queue(), {
+                    
                     self.tableView.reloadData()
             })
             }
@@ -63,6 +65,7 @@ class ResTableView: UITableViewController {
         
    
         cell.RevName.text = Rev_Info.Res_Name
+        
         cell.RevLoc.text = Rev_Info.Res_Loc
         
     

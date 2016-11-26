@@ -39,8 +39,6 @@ class meal : UITableViewController {
         //加入cell要顯示的資料到陣列中
         
         GetMenuInfo()
-print(Res_Uid)
-        
     }
     
     

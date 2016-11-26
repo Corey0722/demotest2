@@ -11,6 +11,9 @@ import UIKit
 class ResCartCell: UITableViewCell {
 
    
+ 
+ 
+    @IBOutlet weak var Guest_Count: UITextField!
     @IBOutlet weak var MealPrice: UILabel!
     @IBOutlet weak var MealID: UILabel!
     @IBOutlet weak var MealCount: UILabel!

@@ -15,10 +15,10 @@ class Res_Info: NSObject {
     var Res_Tel : String?
     var Res_Pic : UIImage?
     var Res_About : String?
-    var Res_PassWord : String?
-    var Res_Email : String?
     var Res_UID : String?
     var Res_Menu : [String:AnyObject]?
-
+    var Res_Order : [String:AnyObject]?
+    var Order_Meal : String?
+    
 }
 
