@@ -248,6 +248,10 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcK-nA-hKN">
+                                            <rect key="frame" x="335" y="342" width="46" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -255,6 +259,7 @@
                                     <outlet property="MealCount" destination="Z0l-Gv-S8M" id="e2T-S8-zzP"/>
                                     <outlet property="MealID" destination="CF2-fC-F2n" id="I4n-xe-MJJ"/>
                                     <outlet property="MealPrice" destination="K8O-RY-TaT" id="ubD-W3-eZo"/>
+                                    <outlet property="RemoveCart" destination="xcK-nA-hKN" id="1y5-ll-fRn"/>
                                     <outlet property="ResLoc" destination="ng8-PS-EpE" id="dX8-yc-Qo8"/>
                                     <outlet property="ResName" destination="im8-nX-Ps9" id="IWX-mv-D6E"/>
                                     <outlet property="ResTel" destination="zHm-o4-BlD" id="nRD-gb-swK"/>

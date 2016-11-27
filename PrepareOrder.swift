@@ -9,9 +9,9 @@
 import UIKit
 
 class PrepareOrder: NSObject {
-    var Order_MealName : String?
-    var Order_MealPrice : String?
-    var Order_MealCount : String?
-    var Order_UID :String?
-    var Order_Meal : [String:AnyObject]?
+    var OrderMealName : String?
+    var OrderMealPrice : String?
+    var OrderMealCount : String?
+    var OrderUID :String?
+    var OrderMeal : [String:AnyObject]?
 }

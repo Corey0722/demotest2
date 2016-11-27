@@ -11,7 +11,7 @@ import UIKit
 class MealModel: NSObject {
 
     
-    var MealId : String?
+    var MealID : String?
     var MealPrice : String?
     var MealCount : String?
     var MealAbout : String?

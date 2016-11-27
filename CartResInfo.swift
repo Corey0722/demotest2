@@ -9,11 +9,11 @@
 import UIKit
 
 class CartResInfo: NSObject {
-    var Cart_MealPrice : String?
-    var Cart_MealCount : String?
-    var Cart_ResName : String?
-    var Cart_ResTel : String?
-    var Cart_ResLoc : String?
-    var OrderUIDForRes : String?
+    var CartMealPrice : String?
+    var CartMealCount : String?
+    var CartStoreName : String?
+    var CartStoreTel : String?
+    var CartStoreLoc : String?
+    var OrderUIDForStore : String?
     
 }

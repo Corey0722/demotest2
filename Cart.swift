@@ -11,10 +11,10 @@ import UIKit
 class Cart: NSObject {
     
 
-    var Cart_ResName : String?
-    var Cart_ResTel : String?
-    var Cart_ResLoc : String?
-    var OrderUIDForRes : String?
+    var CartStoreID : String?
+    var CartStoreTel : String?
+    var CartStoreLoc : String?
+    var OrderUIDForStore : String?
  
 
     

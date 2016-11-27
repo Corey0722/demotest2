@@ -9,13 +9,13 @@
 import UIKit
 
 class OrderGuestModel: NSObject {
-    var Guest_Name : String?
-    var Guest_EMail : String?
-    var Guest_Tel : String?
-    var Guest_Cart : [String:AnyObject]?
-    var Guest_Password : String?
-    var Guest_Count : String?
-    var Guest_UID : String?
-    var Cart_Meal : [String:AnyObject]?
-    var Cart_Res : [String:AnyObject]?
+    var GuestID : String?
+    var GuestMail : String?
+    var GuestTel : String?
+    var GuestCart : [String:AnyObject]?
+    var GuestPassword : String?
+    var GuestCount : String?
+    var GuestUID : String?
+    var CartMeal : [String:AnyObject]?
+    var CartStore : [String:AnyObject]?
 }

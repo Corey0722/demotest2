@@ -27,6 +27,7 @@ class MyMainController: UITableViewController {
             print (FIRAuth.auth()?.currentUser?.uid)
         }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

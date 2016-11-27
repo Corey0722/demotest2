@@ -23,7 +23,7 @@ class ResTableView: UITableViewController {
     }
    
     func GetResInfo(){
-        FIRDatabase.database().reference().child("User_Res").observeEventType(.ChildAdded, withBlock: {(
+        FIRDatabase.database().reference().child("UserStroe").observeEventType(.ChildAdded, withBlock: {(
             snapshot) in
             if let dictionary = snapshot.value as? [String:AnyObject]{
                 let ResInfo = Res_Info()
@@ -37,7 +37,7 @@ class ResTableView: UITableViewController {
             })
             }
             })
-        FIRDatabase.database().reference().child("User_Res").observeEventType(.ChildAdded, withBlock: {
+        FIRDatabase.database().reference().child("UserStroe").observeEventType(.ChildAdded, withBlock: {
             (snapshot) in
                 print (snapshot.key)
                 self.ResUID.append(snapshot.key)
@@ -64,9 +64,9 @@ class ResTableView: UITableViewController {
         let Rev_Info = ResInformation[indexPath.row]
         
    
-        cell.RevName.text = Rev_Info.Res_Name
+        cell.RevName.text = Rev_Info.StoreID
         
-        cell.RevLoc.text = Rev_Info.Res_Loc
+        cell.RevLoc.text = Rev_Info.StoreLoc
         
     
         return cell
@@ -78,9 +78,9 @@ class ResTableView: UITableViewController {
                 meal
                let Rev_NameInMeal = ResInformation[indexPath.row]
               
-                navVC.Rev_Name = Rev_NameInMeal.Res_Name
-                navVC.Rev_Loc = Rev_NameInMeal.Res_Loc
-                navVC.Rev_Tel = Rev_NameInMeal.Res_Tel
+                navVC.Rev_Name = Rev_NameInMeal.StoreID
+                navVC.Rev_Loc = Rev_NameInMeal.StoreLoc
+                navVC.Rev_Tel = Rev_NameInMeal.StoreTel
                 navVC.Res_Uid = ResUID[indexPath.row]
             }
     }

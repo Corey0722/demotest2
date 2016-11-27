@@ -23,6 +23,8 @@ class OrderIsPrepare : UITableViewController {
   CatchResUID()
         self.CartRes.removeAll()
         self.CartMeal.removeAll()
+     
+  
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,20 +37,20 @@ class OrderIsPrepare : UITableViewController {
         let Guest_Uid = FIRAuth.auth()?.currentUser?.uid
         print(ResUID)
         
-        FIRDatabase.database().reference().child("User_Res").child(ResUID!).observeEventType(.Value, withBlock: {(snapshot) in
+        FIRDatabase.database().reference().child("UserStore").child(ResUID!).observeEventType(.Value, withBlock: {(snapshot) in
             print (snapshot)
             if let dictionary = snapshot.value as? [String:AnyObject]{
                 let Cart_Res = Res_Info()
                 Cart_Res.setValuesForKeysWithDictionary(dictionary)
                 print(Cart_Res)
                 self.CartRes.append(Cart_Res)
-                print(Cart_Res.Res_Name)
-                print(Cart_Res.Res_Loc)
+                print(Cart_Res.StoreID)
+                print(Cart_Res.StoreLoc)
                 dispatch_async(dispatch_get_main_queue(), {
                     self.tableView.reloadData()
                 })
             }})
-        FIRDatabase.database().reference().child("User_Res").child(ResUID!).child("Res_Order").child(Guest_Uid!).child("Order_Meal").observeEventType(.ChildAdded, withBlock: {(snapshot) in
+        FIRDatabase.database().reference().child("UserStore").child(ResUID!).child("StoreOrder").child(Guest_Uid!).child("OrderMeal").observeEventType(.ChildAdded, withBlock: {(snapshot) in
             if let dictionary = snapshot.value as? [String:AnyObject]{
                 let Cart_Meal = MealModel()
                 Cart_Meal.setValuesForKeysWithDictionary(dictionary)
@@ -57,12 +59,12 @@ class OrderIsPrepare : UITableViewController {
                     self.tableView.reloadData()
                 })
             }})
-        FIRDatabase.database().reference().child("User_Res").child(ResUID!).child("Res_Order").child(Guest_Uid!).child("Order_Guest").observeEventType(.Value, withBlock: {(snapshot) in
+        FIRDatabase.database().reference().child("UserStore").child(ResUID!).child("StoreOrder").child(Guest_Uid!).child("OrderGuest").observeEventType(.Value, withBlock: {(snapshot) in
             print(snapshot.value)
             if let dictionary = snapshot.value as? [String:AnyObject]{
                 let GuestCount = OrderGuestModel()
                 GuestCount.setValuesForKeysWithDictionary(dictionary)
-                self.Guest_Count = GuestCount.Guest_Count
+                self.Guest_Count = GuestCount.GuestCount
                 dispatch_async(dispatch_get_main_queue(), {
                     self.tableView.reloadData()
                 })
@@ -71,7 +73,7 @@ class OrderIsPrepare : UITableViewController {
     }
     func removeCart(){
         let Guest_Uid = FIRAuth.auth()?.currentUser?.uid
-        FIRDatabase.database().reference().child("User_Guest").child(Guest_Uid!).child("Guest_Cart").removeValue()
+        FIRDatabase.database().reference().child("UserGuest").child(Guest_Uid!).child("GuestCart").removeValue()
     }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -86,18 +88,13 @@ class OrderIsPrepare : UITableViewController {
             let Cart_Res = CartRes[indexPath.row]
             print(CartRes)
             self.tableView.rowHeight = 381
-            let cell = PrepareTable.dequeueReusableCellWithIdentifier("ResOrder" , forIndexPath:  indexPath) as! PrepareResCell
+            let cell = PrepareTable.dequeueReusableCellWithIdentifier("StoreOrder" , forIndexPath:  indexPath) as! PrepareResCell
             let  Cart_Meal = CartMeal[indexPath.row]
-        print(Cart_Res.Res_Name)
-            print(CartRes[indexPath.row])
-            print (Cart_Res.Res_Name)
-            print (Cart_Res.Res_Name)
-            print(Cart_Res.Res_Loc)
-            cell.ResNameInOrder.text = Cart_Res.Res_Name
-            cell.ResLocInOrder.text = Cart_Res.Res_Loc
+            cell.ResNameInOrder.text = Cart_Res.StoreID
+            cell.ResLocInOrder.text = Cart_Res.StoreLoc
 //            cell.ResTel.text = Cart_Res.Res_Tel
             cell.GuestCountInOrder.text = Guest_Count
-            cell.MealNameInOrder.text = Cart_Meal.MealId
+            cell.MealNameInOrder.text = Cart_Meal.MealID
             cell.MealCountInOrder.text = Cart_Meal.MealCount
             cell.MealPriceInOrder.text = Cart_Meal.MealPrice
             
@@ -106,7 +103,7 @@ class OrderIsPrepare : UITableViewController {
             self.tableView.rowHeight = 95
             let cell = PrepareTable.dequeueReusableCellWithIdentifier("MealOrder", forIndexPath:  indexPath) as! PrepareMealCell
             let  Cart_Meal = CartMeal[indexPath.row]
-            cell.MealNameInOrder.text = Cart_Meal.MealId
+            cell.MealNameInOrder.text = Cart_Meal.MealID
             cell.MealCountInOrder.text = Cart_Meal.MealCount
             cell.MealPriceOrder.text = Cart_Meal.MealPrice
             
@@ -116,13 +113,13 @@ class OrderIsPrepare : UITableViewController {
         func CatchResUID(){
         let UserUID = FIRAuth.auth()?.currentUser?.uid
         
-FIRDatabase.database().reference().child("User_Guest").child(UserUID!).child("Guest_Cart").child("Cart_Res").observeEventType(.Value, withBlock: {(snapshot) in
+FIRDatabase.database().reference().child("UserGuest").child(UserUID!).child("GuestCart").child("CartStore").observeEventType(.Value, withBlock: {(snapshot) in
     print (snapshot.value)
             if let dicrionary = snapshot.value as? [String:AnyObject]{
             
                 let GetUid = CartResInfo()
                 GetUid.setValuesForKeysWithDictionary(dicrionary)
-                self.ResUID = GetUid.OrderUIDForRes
+                self.ResUID = GetUid.OrderUIDForStore
                 print(self.ResUID)
                 self.getvalueToDictionary()
     }

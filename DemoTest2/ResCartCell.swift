@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class ResCartCell: UITableViewCell {
 
    
  
  
+
+
+    @IBOutlet weak var RemoveCart: UIButton!
+
     @IBOutlet weak var Guest_Count: UITextField!
     @IBOutlet weak var MealPrice: UILabel!
     @IBOutlet weak var MealID: UILabel!

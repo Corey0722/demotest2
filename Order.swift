@@ -10,13 +10,13 @@ import UIKit
 
 class Order: NSObject {
     
-    var Cart_MealId : String?
-    var Cart_MealPrice : String?
-    var Cart_MealCount : String?
-    var Cart_ResName : String?
-    var Cart_ResTel : String?
-    var Cart_ResLoc : String?
-    var Res_UID : String?
-    var Res_Menu : [String:AnyObject]?
+    var CartMealId : String?
+    var CartMealPrice : String?
+    var CartMealCount : String?
+    var CartStoreID : String?
+    var CartStoreTel : String?
+    var CartStoreLoc : String?
+    var StoreUID : String?
+    var StoreMenu : [String:AnyObject]?
 
 }

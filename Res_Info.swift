@@ -10,15 +10,15 @@ import UIKit
 
 class Res_Info: NSObject {
     
-    var Res_Name : String?
-    var Res_Loc : String?
-    var Res_Tel : String?
-    var Res_Pic : UIImage?
-    var Res_About : String?
-    var Res_UID : String?
-    var Res_Menu : [String:AnyObject]?
-    var Res_Order : [String:AnyObject]?
-    var Order_Meal : String?
+    var StoreID : String?
+    var StoreLoc : String?
+    var StoreTel : String?
+    var StorePic : UIImage?
+    var StoreAbout : String?
+    var StoreUID : String?
+    var StoreMenu : [String:AnyObject]?
+    var StoreOrder : [String:AnyObject]?
+    var StoreOrderMeal : String?
     
 }
 

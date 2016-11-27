@@ -132,46 +132,41 @@ class CreateUserEMailViewController: UIViewController {
         let Guest_Name = UserName.text!
         let Guest_PassWord = PassWord.text!
         let Guest_Email = EmailTextFile.text!
-        let Guest_Birth_Year = BirthYear.text!
-        let Guest_Birth_Month = BirthMonth.text!
-        let Guest_Birth_Date = BirthDate.text!
 //        let MealID = "五"
 //        let  MealPrice = "278"
 //        訂單暫用的值
-        let Res_Name = "溫野菜"
-        let Res_Tel = "27526301"
-        let Res_Loc = "忠孝東路"
-        let Res_About = "好吃的火鍋餐廳"
-        let Res_PassWord = "27526301"
-        let Res_Email = "cob02082011@yahoo.com"
-        let Res_UID = FIRAuth.auth()?.currentUser?.uid
-        
+//        let Res_Name = "溫野菜"
+//        let Res_Tel = "27526301"
+//        let Res_Loc = "忠孝東路"
+//        let Res_About = "好吃的火鍋餐廳"
+//        let Res_PassWord = "27526301"
+//        let Res_Email = "cob02082011@yahoo.com"
+//        let Res_UID = FIRAuth.auth()?.currentUser?.uid
+//        
         
        
         
         
         
         
-        let postGuest : [String:AnyObject] = ["Guest_Name" : Guest_Name,
-                                         "Guest_Password" : Guest_PassWord,
-                                         "Guest_EMail" : Guest_Email,
-                                         "Guest_BirthYear" : Guest_Birth_Year,
-                                         "Guest_Birth_Month" : Guest_Birth_Month,
-                                         "Guest_Birth-Date" : Guest_Birth_Date]
+        let postGuest : [String:AnyObject] = ["GuestID" : Guest_Name,
+                                         "GuestPassword" : Guest_PassWord,
+                                         "GuestMail" : Guest_Email,
+                                         ]
         
         
-        let postRes : [String:AnyObject] = ["Res_Name" : Res_Name,
-                                              "Res_PassWord" : Res_PassWord,
-                                              "Res_Email" : Res_Email,
-                                              "Res_Loc" : Res_Loc,
-                                              "Res_About" : Res_About,
-                                              "Res_Tel" : Res_Tel,
-                                              "Res_UID" : Res_UID!]
-//        let OrderArray : [String:AnyObject] = [
-//            "Meal_Id" : MealID,
-//            "Meal_Price" : MealPrice
-//        ]
-//        訂單用結構
+//        let postRes : [String:AnyObject] = ["Res_Name" : Res_Name,
+//                                              "Res_PassWord" : Res_PassWord,
+//                                              "Res_Email" : Res_Email,
+//                                              "Res_Loc" : Res_Loc,
+//                                              "Res_About" : Res_About,
+//                                              "Res_Tel" : Res_Tel,
+//                                              "Res_UID" : Res_UID!]
+////        let OrderArray : [String:AnyObject] = [
+////            "Meal_Id" : MealID,
+////            "Meal_Price" : MealPrice
+////        ]
+////        訂單用結構
         
         let databaseref = FIRDatabase.database().reference()
         
@@ -182,9 +177,9 @@ class CreateUserEMailViewController: UIViewController {
         
        
         let UserResuid = FIRAuth.auth()?.currentUser?.uid
-        databaseref.child("User_Guest").child(UserResuid!).setValue(postGuest)
-        databaseref.child("User_Res").child(UserResuid!).setValue(postRes)
-        
+        databaseref.child("UserGuest").child(UserResuid!).setValue(postGuest)
+//        databaseref.child("User_Res").child(UserResuid!).setValue(postRes)
+//        
         
         
 //        databaseref.child("User_Guest").child(uid!).child("Guest_Order").childByAutoId().setValue(OrderArray)

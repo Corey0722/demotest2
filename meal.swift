@@ -44,7 +44,7 @@ class meal : UITableViewController {
     
 
     func GetMenuInfo (){
-        FIRDatabase.database().reference().child("User_Res").child(Res_Uid!).child("Res_Menu").observeEventType(.ChildAdded, withBlock: {(
+        FIRDatabase.database().reference().child("UserStore").child(Res_Uid!).child("StoreMenu").observeEventType(.ChildAdded, withBlock: {(
             snapshot) in
             if let dictionary = snapshot.value as? [String:AnyObject]{
                 let MenuInfo = MealModel()
@@ -95,7 +95,7 @@ class meal : UITableViewController {
    
         
         cell.MealPrice.text = Menu_All.MealPrice
-        cell.MealName.text = Menu_All.MealId
+        cell.MealName.text = Menu_All.MealID
  
               return cell
         //回傳cell
@@ -113,7 +113,7 @@ class meal : UITableViewController {
                 navVC.Rv_Tel = Rev_Tel
                 navVC.Rv_UID = Res_Uid
                 navVC.MiAboutName = Menu_All.MealAbout
-                navVC.MiIDName = Menu_All.MealId
+                navVC.MiIDName = Menu_All.MealID
                 navVC.MiPriceName = Menu_All.MealPrice
                 
                

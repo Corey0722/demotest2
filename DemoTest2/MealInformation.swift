@@ -32,6 +32,7 @@ class MealInformation: UITableViewController {
     var Rv_UID:String!
     var Check_ResUID : [String] = []
     var Check_MealId : [String] = []
+    var Check_GuestUID : [String] = []
     let databaseOfCart = FIRDatabase.database().reference()
      let GuestUid = FIRAuth.auth()?.currentUser?.uid
     
@@ -68,12 +69,41 @@ class MealInformation: UITableViewController {
         
         
     }
-    
+    func CheckOrder(){
+        FIRDatabase.database().reference().child("UserStore").child(Rv_UID!).child("StoreOrder").observeEventType(.ChildAdded, withBlock: {(snapshot) in
+            print(snapshot.key)
+            self.Check_GuestUID.append(snapshot.key)
+            
+        })
+        let GuestUID = FIRAuth.auth()?.currentUser?.uid
+        if Check_GuestUID != []{
+            let result = self.Check_GuestUID.contains{(value) -> Bool in
+                if value == GuestUID {
+                    print("已有訂單進行")
+                    return true
+                }
+                else{
+                    print  ("沒有訂單進行")
+                    return false
+                }}
+            if result == true{
+                let alert = UIAlertController(title: "錯誤", message: "已有訂單在執行", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }else{
+                CheckCartResUID()
+                
+            }
+            
+        }else{
+            CheckCartResUID()
+        }
+    }
 
     @IBAction func AddCart(sender: AnyObject) {
         if Int(MiCount.text!) > 0{
             
-            CheckCartResUID()
+            CheckOrder()
 
                }
     }
@@ -123,23 +153,23 @@ MealInfoPostCart()
         let Res_Name_To_Cart = RvName.text!
         let Res_Tel_To_Cart = RvTel.text!
         let Res_Loc_To_Cart = RvLoc.text!
-        let CartPostResInfo : [String:AnyObject] = ["Cart_ResName" :Res_Name_To_Cart,
-                                                "Cart_ResTel" : Res_Tel_To_Cart,
-                                             "Cart_ResLoc" : Res_Loc_To_Cart,
-                                             "OrderUIDForRes": Rv_UID]
+        let CartPostResInfo : [String:AnyObject] = ["CartStoreID" :Res_Name_To_Cart,
+                                                "CartStoreTel" : Res_Tel_To_Cart,
+                                             "CartStoreLoc" : Res_Loc_To_Cart,
+                                             "OrderUIDForStore": Rv_UID]
         let CartPostMealInfo : [String:AnyObject] = ["MealPrice" : MiId_Price,
                                                      "MealCount" : Mi_Count,
                                                      "MealId" : MiID_Name]
-        databaseOfCart.child("User_Guest").child(GuestUid!).child("Guest_Cart").child("Cart_Res").setValue(CartPostResInfo)
-        databaseOfCart.child("User_Guest").child(GuestUid!).child("Guest_Cart").child("Cart_Meal").child(MiID_Name).setValue(CartPostMealInfo)
+        databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").child("CartStore").setValue(CartPostResInfo)
+        databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").child("CartMeal").child(MiID_Name).setValue(CartPostMealInfo)
     }
     func prepareInfo(){
-        databaseOfCart.child("User_Guest").child(GuestUid!).child("Guest_Cart").observeEventType(.ChildAdded , withBlock:
+        databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").observeEventType(.ChildAdded , withBlock:
             {(snapshot) in
                 if let dictionary = snapshot.value as? [String:String]{
                     let check = Cart()
                     check.setValuesForKeysWithDictionary(dictionary)
-                    self.Check_ResUID.append(check.OrderUIDForRes!)
+                    self.Check_ResUID.append(check.OrderUIDForStore!)
 
                     
                 }
