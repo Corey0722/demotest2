@@ -14,8 +14,9 @@ class ResTableView: UITableViewController {
 
     var ResUID = [String]()
     var ResInformation = [Res_Info]()
-    @IBOutlet var myRevTableView: UITableView!
+  
  
+    @IBOutlet var ResTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         GetResInfo()
@@ -23,8 +24,9 @@ class ResTableView: UITableViewController {
     }
    
     func GetResInfo(){
-        FIRDatabase.database().reference().child("UserStroe").observeEventType(.ChildAdded, withBlock: {(
+        FIRDatabase.database().reference().child("UserStore").observeEventType(.ChildAdded, withBlock: {(
             snapshot) in
+            print (snapshot.value)
             if let dictionary = snapshot.value as? [String:AnyObject]{
                 let ResInfo = Res_Info()
                 ResInfo.setValuesForKeysWithDictionary(dictionary)
@@ -32,16 +34,16 @@ class ResTableView: UITableViewController {
                 print(self.ResInformation)
                 
                 dispatch_async(dispatch_get_main_queue(), {
-                    
                     self.tableView.reloadData()
             })
             }
             })
-        FIRDatabase.database().reference().child("UserStroe").observeEventType(.ChildAdded, withBlock: {
+        FIRDatabase.database().reference().child("UserStore").observeEventType(.ChildAdded, withBlock: {
             (snapshot) in
                 print (snapshot.key)
                 self.ResUID.append(snapshot.key)
-            
+        
+
         })
     
     }
@@ -56,7 +58,7 @@ class ResTableView: UITableViewController {
         return ResInformation.count
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = myRevTableView.dequeueReusableCellWithIdentifier("RevCell",
+        let cell = ResTable.dequeueReusableCellWithIdentifier("RevCell",
         forIndexPath: indexPath) as! RevCell
         
         //將類別myTableViewMeal轉型為RevCell
@@ -68,12 +70,14 @@ class ResTableView: UITableViewController {
         
         cell.RevLoc.text = Rev_Info.StoreLoc
         
+        cell.ResPic.sd_setImageWithURL(NSURL(string: Rev_Info.StorePic!))
+        
     
         return cell
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender:AnyObject?){
         if segue.identifier == "RevToMenuSegue"{
-            if let indexPath = self.myRevTableView.indexPathForSelectedRow{
+            if let indexPath = self.ResTable.indexPathForSelectedRow{
                 let navVC = segue.destinationViewController as!
                 meal
                let Rev_NameInMeal = ResInformation[indexPath.row]
@@ -82,6 +86,7 @@ class ResTableView: UITableViewController {
                 navVC.Rev_Loc = Rev_NameInMeal.StoreLoc
                 navVC.Rev_Tel = Rev_NameInMeal.StoreTel
                 navVC.Res_Uid = ResUID[indexPath.row]
+                navVC.Res_PicName = Rev_NameInMeal.StorePic
             }
     }
     

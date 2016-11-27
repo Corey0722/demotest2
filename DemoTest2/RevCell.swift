@@ -11,6 +11,7 @@ import UIKit
 class RevCell: UITableViewCell {
 
     
+    @IBOutlet weak var ResPic: UIImageView!
    
     @IBOutlet weak var RevLoc: UILabel!
     @IBOutlet weak var RevName: UILabel!

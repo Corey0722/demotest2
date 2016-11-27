@@ -11,6 +11,7 @@ import UIKit
 class MealCartCell: UITableViewCell {
 
 
+    @IBOutlet weak var MealPic: UIImageView!
     @IBOutlet weak var MealCount: UILabel!
     @IBOutlet weak var MealPrice: UILabel!
     @IBOutlet weak var MealName: UILabel!

@@ -25,20 +25,24 @@ class CartTableViewController: UITableViewController {
     var GuestCount : String?
     override func viewDidAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        getvalueToDictionary()
         self.CartRes.removeAll()
         self.CartMeal.removeAll()
+        self.Check_GuestUID.removeAll()
+        getvalueToDictionary()
+        self.CartTable.reloadData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBAction func AddOrder(sender: AnyObject) {
         self.CartTable.reloadData()
-        FIRDatabase.database().reference().child("UserStore").child(ResUID!).child("StoreOrder").observeEventType(.ChildAdded, withBlock: {(snapshot) in
-            print(snapshot.key)
+        self.Check_GuestUID.removeAll()
+        FIRDatabase.database().reference().child("UserStore").child(ResUID!).observeEventType(.ChildAdded, withBlock: {(snapshot) in
+            print(snapshot.value)
             self.Check_GuestUID.append(snapshot.key)
             
         })
+
             if CartRes == []{
             let alert = UIAlertController(title: "訂單失敗", message: "請先新建購物車！", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: nil))
@@ -63,6 +67,7 @@ class CartTableViewController: UITableViewController {
     }
     func CheckGuestUID(){
         let GuestUID = FIRAuth.auth()?.currentUser?.uid
+        
         if Check_GuestUID != []{
             let result = self.Check_GuestUID.contains{(value) -> Bool in
                 if value == GuestUID {
@@ -73,6 +78,7 @@ class CartTableViewController: UITableViewController {
                     print  ("沒有訂單進行")
                     return false
                 }}
+            
                 if result == true{
                     let alert = UIAlertController(title: "錯誤", message: "已有訂單在執行", preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: nil))
@@ -85,7 +91,9 @@ class CartTableViewController: UITableViewController {
                 }
             
         }else{
-            CartMealToOrder()
+            let alert = UIAlertController(title: "完成", message: "已完成您的訂單", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: { action in self.CartMealToOrder() }))
+            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
     func getvalueToDictionary(){
@@ -112,7 +120,7 @@ FIRDatabase.database().reference().child("UserGuest").child(Guest_Uid!).child("G
             print (snapshot.key)
             
         })
-    }
+           }
   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -152,7 +160,7 @@ FIRDatabase.database().reference().child("UserGuest").child(Guest_Uid!).child("G
                 self.CartRes.removeAll()
                 self.CartMeal.removeAll()
                 self.tableView.reloadData()
-                
+        
             }
             
         }else{
@@ -177,6 +185,8 @@ FIRDatabase.database().reference().child("UserGuest").child(Guest_Uid!).child("G
             cell.MealID.text = Cart_Meal.MealID
             cell.MealCount.text = Cart_Meal.MealCount
             cell.MealPrice.text = Cart_Meal.MealPrice
+            cell.StorePic.sd_setImageWithURL(NSURL(string:Cart_Res.CartStorePic!))
+            cell.MealPic.sd_setImageWithURL(NSURL(string: Cart_Meal.MealPic!))
             cell.RemoveCart.addTarget(self, action: #selector(self.RemoveCart(_:)), forControlEvents: .TouchUpInside)
             GuestCount = cell.Guest_Count.text
             ResUID = Cart_Res.OrderUIDForStore
@@ -189,6 +199,7 @@ FIRDatabase.database().reference().child("UserGuest").child(Guest_Uid!).child("G
             cell.MealName.text = Cart_Meal.MealID
             cell.MealCount.text = Cart_Meal.MealCount
             cell.MealPrice.text = Cart_Meal.MealPrice
+            cell.MealPic.sd_setImageWithURL(NSURL(string: Cart_Meal.MealPic!))
             
             return cell
         }
@@ -204,7 +215,8 @@ func CartMealToOrder(){
                 self.MealToOrder.append(CartToOrder)
                 let MealOrder : [String:AnyObject] = ["MealID" : CartToOrder.MealID!,
                                                       "MealCount" : CartToOrder.MealCount!,
-                                                      "MealPrice" : CartToOrder.MealPrice!]
+                                                      "MealPrice" : CartToOrder.MealPrice!,
+                    "MealPic" : CartToOrder.MealPic!]
         
         FIRDatabase.database().reference().child("UserGuest").child(GuestUID!).observeEventType(.Value, withBlock: {
             (snapshot) in

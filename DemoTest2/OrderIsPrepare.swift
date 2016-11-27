@@ -23,6 +23,7 @@ class OrderIsPrepare : UITableViewController {
   CatchResUID()
         self.CartRes.removeAll()
         self.CartMeal.removeAll()
+        self.PrepareTable.reloadData()
      
   
     }
@@ -88,7 +89,7 @@ class OrderIsPrepare : UITableViewController {
             let Cart_Res = CartRes[indexPath.row]
             print(CartRes)
             self.tableView.rowHeight = 381
-            let cell = PrepareTable.dequeueReusableCellWithIdentifier("StoreOrder" , forIndexPath:  indexPath) as! PrepareResCell
+            let cell = PrepareTable.dequeueReusableCellWithIdentifier("ResOrder" , forIndexPath:  indexPath) as! PrepareResCell
             let  Cart_Meal = CartMeal[indexPath.row]
             cell.ResNameInOrder.text = Cart_Res.StoreID
             cell.ResLocInOrder.text = Cart_Res.StoreLoc
@@ -97,6 +98,9 @@ class OrderIsPrepare : UITableViewController {
             cell.MealNameInOrder.text = Cart_Meal.MealID
             cell.MealCountInOrder.text = Cart_Meal.MealCount
             cell.MealPriceInOrder.text = Cart_Meal.MealPrice
+            cell.StorePic.sd_setImageWithURL(NSURL(string: Cart_Res.StorePic!))
+            cell.MealPic.sd_setImageWithURL(NSURL(string: Cart_Meal.MealPic!))
+                
             
             return cell
         }else{
@@ -106,7 +110,7 @@ class OrderIsPrepare : UITableViewController {
             cell.MealNameInOrder.text = Cart_Meal.MealID
             cell.MealCountInOrder.text = Cart_Meal.MealCount
             cell.MealPriceOrder.text = Cart_Meal.MealPrice
-            
+            cell.MealPic.sd_setImageWithURL(NSURL(string: Cart_Meal.MealPic!))
             return cell
         }
     }

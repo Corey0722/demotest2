@@ -15,6 +15,7 @@ class MealModel: NSObject {
     var MealPrice : String?
     var MealCount : String?
     var MealAbout : String?
+    var MealPic : String?
   
     
 }

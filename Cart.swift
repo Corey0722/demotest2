@@ -15,6 +15,8 @@ class Cart: NSObject {
     var CartStoreTel : String?
     var CartStoreLoc : String?
     var OrderUIDForStore : String?
+    var CartStorePic : String?
+    
  
 
     

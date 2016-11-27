@@ -10,6 +10,8 @@ import UIKit
 
 class PrepareResCell: UITableViewCell {
 
+    @IBOutlet weak var MealPic: UIImageView!
+    @IBOutlet weak var StorePic: UIImageView!
     @IBOutlet weak var GuestCountInOrder: UILabel!
     @IBOutlet weak var ResTelInOrder: UILabel!
     @IBOutlet weak var MealPriceInOrder: UILabel!

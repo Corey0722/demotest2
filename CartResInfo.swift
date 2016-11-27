@@ -11,9 +11,9 @@ import UIKit
 class CartResInfo: NSObject {
     var CartMealPrice : String?
     var CartMealCount : String?
-    var CartStoreName : String?
+    var CartStoreID : String?
     var CartStoreTel : String?
     var CartStoreLoc : String?
     var OrderUIDForStore : String?
-    
+    var CartStorePic : String?
 }

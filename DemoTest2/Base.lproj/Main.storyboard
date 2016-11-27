@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ac4-lD-ffC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ac4-lD-ffC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -214,13 +214,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="菜名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF2-fC-F2n">
-                                            <rect key="frame" x="109" y="268" width="197" height="48"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="份量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0l-Gv-S8M">
-                                            <rect key="frame" x="335" y="268" width="71" height="48"/>
+                                            <rect key="frame" x="109" y="282" width="197" height="48"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -252,17 +246,31 @@
                                             <rect key="frame" x="335" y="342" width="46" height="30"/>
                                             <state key="normal" title="Button"/>
                                         </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2t-XR-cFj">
+                                            <rect key="frame" x="8" y="8" width="393" height="143"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-yK-xqi">
+                                            <rect key="frame" x="0.0" y="281" width="101" height="102"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="份量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0l-Gv-S8M">
+                                            <rect key="frame" x="332" y="282" width="71" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="Guest_Count" destination="dK8-Ug-oxf" id="tut-MC-b3s"/>
                                     <outlet property="MealCount" destination="Z0l-Gv-S8M" id="e2T-S8-zzP"/>
                                     <outlet property="MealID" destination="CF2-fC-F2n" id="I4n-xe-MJJ"/>
+                                    <outlet property="MealPic" destination="6c3-yK-xqi" id="noh-Gc-PGB"/>
                                     <outlet property="MealPrice" destination="K8O-RY-TaT" id="ubD-W3-eZo"/>
                                     <outlet property="RemoveCart" destination="xcK-nA-hKN" id="1y5-ll-fRn"/>
                                     <outlet property="ResLoc" destination="ng8-PS-EpE" id="dX8-yc-Qo8"/>
                                     <outlet property="ResName" destination="im8-nX-Ps9" id="IWX-mv-D6E"/>
                                     <outlet property="ResTel" destination="zHm-o4-BlD" id="nRD-gb-swK"/>
+                                    <outlet property="StorePic" destination="m2t-XR-cFj" id="e9o-qO-SSs"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MealCart" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealCart" rowHeight="98" id="hQn-xC-2ab" customClass="MealCartCell" customModule="DemoTest2" customModuleProvider="target">
@@ -290,11 +298,15 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NXo-uz-8xa">
+                                            <rect key="frame" x="0.0" y="0.0" width="102" height="96"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="MealCount" destination="kNO-7a-iXP" id="rR9-6H-8bv"/>
                                     <outlet property="MealName" destination="ocx-2V-CMj" id="Gya-0T-ZeS"/>
+                                    <outlet property="MealPic" destination="NXo-uz-8xa" id="7GO-bn-AdM"/>
                                     <outlet property="MealPrice" destination="Um6-UI-Ykr" id="RCN-Iz-kt2"/>
                                 </connections>
                             </tableViewCell>
@@ -628,6 +640,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="ResPic" destination="zn7-oP-te3" id="4zp-4V-Hrg"/>
                                     <outlet property="RevLoc" destination="yVz-Og-lSe" id="J6m-LN-vVl"/>
                                     <outlet property="RevName" destination="lhP-Qc-qr1" id="Mnf-Ca-46a"/>
                                     <outlet property="RevPic" destination="zn7-oP-te3" id="ueg-HU-Bog"/>
@@ -642,7 +655,7 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="myRevTableView" destination="Nuj-yP-Ogg" id="XCx-97-zkt"/>
+                        <outlet property="ResTable" destination="Nuj-yP-Ogg" id="ZSk-D4-w4v"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3I-8h-f1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -905,12 +918,6 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="菜名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-cM-bgD">
-                                            <rect key="frame" x="109" y="268" width="197" height="48"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="份量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-Jd-6k1">
                                             <rect key="frame" x="335" y="268" width="71" height="48"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -935,23 +942,37 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vb-VK-kCm">
+                                            <rect key="frame" x="8" y="8" width="398" height="146"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="niu-l5-iEv">
+                                            <rect key="frame" x="8" y="280" width="93" height="98"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="菜名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oq-cM-bgD">
+                                            <rect key="frame" x="109" y="280" width="197" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="GuestCountInOrder" destination="6ZY-QR-Vdu" id="Xhk-IW-5gv"/>
                                     <outlet property="MealCountInOrder" destination="1dW-Jd-6k1" id="OLz-9H-gn1"/>
                                     <outlet property="MealNameInOrder" destination="2oq-cM-bgD" id="mtL-Vv-ljM"/>
+                                    <outlet property="MealPic" destination="niu-l5-iEv" id="96s-zm-MhU"/>
                                     <outlet property="MealPriceInOrder" destination="lEu-N7-RA4" id="gwD-fb-v41"/>
                                     <outlet property="ResLocInOrder" destination="ETt-gB-n2h" id="8uh-fd-UJF"/>
                                     <outlet property="ResNameInOrder" destination="FWb-71-qQh" id="HcM-u3-1z3"/>
                                     <outlet property="ResTelInOrder" destination="5hg-5f-coI" id="ajC-Kv-yDt"/>
+                                    <outlet property="StorePic" destination="1vb-VK-kCm" id="tgD-e7-Qqa"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MealOrder" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealOrder" rowHeight="98" id="Xhc-4f-CjT" customClass="PrepareMealCell" customModule="DemoTest2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="484" width="414" height="98"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MealOrder" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealOrder" rowHeight="105" id="Xhc-4f-CjT" customClass="PrepareMealCell" customModule="DemoTest2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="484" width="414" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xhc-4f-CjT" id="RH0-xB-J0A">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="菜名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDX-Td-Zcz">
@@ -972,11 +993,15 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBj-0h-ehw">
+                                            <rect key="frame" x="8" y="0.0" width="94" height="96"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="MealCountInOrder" destination="Lwk-7B-vuk" id="eHh-5d-don"/>
                                     <outlet property="MealNameInOrder" destination="XDX-Td-Zcz" id="Nnn-fq-pRK"/>
+                                    <outlet property="MealPic" destination="xBj-0h-ehw" id="sJA-Q6-wex"/>
                                     <outlet property="MealPriceOrder" destination="XpE-bw-nSJ" id="3bv-kB-5px"/>
                                 </connections>
                             </tableViewCell>

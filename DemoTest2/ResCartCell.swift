@@ -17,6 +17,8 @@ class ResCartCell: UITableViewCell {
  
 
 
+    @IBOutlet weak var MealPic: UIImageView!
+    @IBOutlet weak var StorePic: UIImageView!
     @IBOutlet weak var RemoveCart: UIButton!
 
     @IBOutlet weak var Guest_Count: UITextField!

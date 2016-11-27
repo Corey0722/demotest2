@@ -24,8 +24,9 @@ class MealInformation: UITableViewController {
     @IBOutlet weak var MiPrice: UILabel!
     var MiIDName:String!
     var MiPriceName:String!
-    var MiPicName:UIImage!
+    var MiPicName:String!
     var MiAboutName:String!
+    var StorePicName:String!
     var Rv_Name:String!
     var Rv_Loc:String!
     var Rv_Tel:String!
@@ -45,11 +46,12 @@ class MealInformation: UITableViewController {
 
         self.MiID.text = MiIDName
         self.MiPrice.text = MiPriceName
-        self.MiPic.image = MiPicName
+        
         self.MiAbout.text = MiAboutName
         self.RvName.text = Rv_Name
         self.RvLoc.text = Rv_Loc
         self.RvTel.text = Rv_Tel
+        self.MiPic.sd_setImageWithURL(NSURL(string: MiPicName))
         
         prepareInfo()
         print(GuestUid)
@@ -153,13 +155,16 @@ MealInfoPostCart()
         let Res_Name_To_Cart = RvName.text!
         let Res_Tel_To_Cart = RvTel.text!
         let Res_Loc_To_Cart = RvLoc.text!
+        
         let CartPostResInfo : [String:AnyObject] = ["CartStoreID" :Res_Name_To_Cart,
                                                 "CartStoreTel" : Res_Tel_To_Cart,
                                              "CartStoreLoc" : Res_Loc_To_Cart,
-                                             "OrderUIDForStore": Rv_UID]
+                                             "OrderUIDForStore": Rv_UID,
+                                             "CartStorePic" : StorePicName]
         let CartPostMealInfo : [String:AnyObject] = ["MealPrice" : MiId_Price,
                                                      "MealCount" : Mi_Count,
-                                                     "MealId" : MiID_Name]
+                                                     "MealID" : MiID_Name,
+                                                     "MealPic" : MiPicName]
         databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").child("CartStore").setValue(CartPostResInfo)
         databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").child("CartMeal").child(MiID_Name).setValue(CartPostMealInfo)
     }

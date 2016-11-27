@@ -23,6 +23,7 @@ class meal : UITableViewController {
     var Rev_Loc: String?
     var Rev_Tel: String?
     var Res_Uid : String?
+    var Res_PicName : String?
     var MenuAll = [MealModel]()
 
     
@@ -96,6 +97,7 @@ class meal : UITableViewController {
         
         cell.MealPrice.text = Menu_All.MealPrice
         cell.MealName.text = Menu_All.MealID
+        cell.MealPic.sd_setImageWithURL(NSURL(string: Menu_All.MealPic!))
  
               return cell
         //回傳cell
@@ -115,7 +117,9 @@ class meal : UITableViewController {
                 navVC.MiAboutName = Menu_All.MealAbout
                 navVC.MiIDName = Menu_All.MealID
                 navVC.MiPriceName = Menu_All.MealPrice
-                
+                navVC.MiPicName = Menu_All.MealPic
+                navVC.StorePicName = Res_PicName
+              
                
                 
             }

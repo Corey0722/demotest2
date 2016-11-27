@@ -315,7 +315,7 @@
 				TargetAttributes = {
 					044C7CA41CA3A2C40031F911 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 93DBNYMR7K;
+						DevelopmentTeam = DUVYGPFNFR;
 					};
 					044C7CB81CA3A2C40031F911 = {
 						CreatedOnToolsVersion = 7.3;
@@ -603,6 +603,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DemoTest2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Corey.DemoTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,6 +620,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DemoTest2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Corey.DemoTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -13,12 +13,13 @@ class Res_Info: NSObject {
     var StoreID : String?
     var StoreLoc : String?
     var StoreTel : String?
-    var StorePic : UIImage?
+    var StorePic : String?
     var StoreAbout : String?
     var StoreUID : String?
     var StoreMenu : [String:AnyObject]?
     var StoreOrder : [String:AnyObject]?
     var StoreOrderMeal : String?
+    var StoreMail : String?
     
 }
 
