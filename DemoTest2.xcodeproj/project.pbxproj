@@ -42,7 +42,7 @@
 		04F865CC1D0ED5E4002A0D9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F865CB1D0ED5E4002A0D9B /* MapKit.framework */; };
 		04F865CE1D1037D9002A0D9B /* momo壽喜燒.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F865CD1D1037D9002A0D9B /* momo壽喜燒.jpg */; };
 		04F865D01D1037EA002A0D9B /* 王品.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F865CF1D1037EA002A0D9B /* 王品.jpg */; };
-		57998A351069FAA37DB6B76B /* Pods_DemoTest2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35A4CD558BBA9B6BC7A277 /* Pods_DemoTest2.framework */; };
+		F52595F61242477582A62F82 /* Pods_DemoTest2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18FFB809D0B6EE23D267C38 /* Pods_DemoTest2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,9 +105,9 @@
 		04F865CB1D0ED5E4002A0D9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		04F865CD1D1037D9002A0D9B /* momo壽喜燒.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "momo壽喜燒.jpg"; sourceTree = "<group>"; };
 		04F865CF1D1037EA002A0D9B /* 王品.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "王品.jpg"; sourceTree = "<group>"; };
-		0A35A4CD558BBA9B6BC7A277 /* Pods_DemoTest2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTest2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAFB7001DCA858BBECA31E9 /* Pods-DemoTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTest2.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTest2/Pods-DemoTest2.release.xcconfig"; sourceTree = "<group>"; };
 		648C0BE39C9424152D070452 /* Pods-DemoTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTest2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTest2/Pods-DemoTest2.debug.xcconfig"; sourceTree = "<group>"; };
+		C18FFB809D0B6EE23D267C38 /* Pods_DemoTest2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTest2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F865CC1D0ED5E4002A0D9B /* MapKit.framework in Frameworks */,
-				57998A351069FAA37DB6B76B /* Pods_DemoTest2.framework in Frameworks */,
+				F52595F61242477582A62F82 /* Pods_DemoTest2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 				044C7CC71CA3A2C40031F911 /* DemoTest2UITests */,
 				044C7CA61CA3A2C40031F911 /* Products */,
 				3207802FC115A417E5B50EE2 /* Pods */,
-				5FCFD28D44ADAB37290F5ADB /* Frameworks */,
+				D54AC530F7B05C843677DD95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,10 +236,10 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5FCFD28D44ADAB37290F5ADB /* Frameworks */ = {
+		D54AC530F7B05C843677DD95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A35A4CD558BBA9B6BC7A277 /* Pods_DemoTest2.framework */,
+				C18FFB809D0B6EE23D267C38 /* Pods_DemoTest2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -316,13 +316,16 @@
 					044C7CA41CA3A2C40031F911 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = DUVYGPFNFR;
+						LastSwiftMigration = 0810;
 					};
 					044C7CB81CA3A2C40031F911 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 044C7CA41CA3A2C40031F911;
 					};
 					044C7CC31CA3A2C40031F911 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 044C7CA41CA3A2C40031F911;
 					};
 				};
@@ -609,6 +612,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoTest2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -625,6 +629,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Corey.DemoTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DemoTest2-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -636,6 +641,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Corey.DemoTest2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoTest2.app/DemoTest2";
 			};
 			name = Debug;
@@ -648,6 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Corey.DemoTest2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoTest2.app/DemoTest2";
 			};
 			name = Release;
@@ -659,6 +666,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Corey.DemoTest2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DemoTest2;
 			};
 			name = Debug;
@@ -670,6 +678,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Corey.DemoTest2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DemoTest2;
 			};
 			name = Release;

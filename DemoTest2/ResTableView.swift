@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
+
 class ResTableView: UITableViewController {
 
     var ResUID = [String]()
@@ -24,21 +25,21 @@ class ResTableView: UITableViewController {
     }
    
     func GetResInfo(){
-        FIRDatabase.database().reference().child("UserStore").observeEventType(.ChildAdded, withBlock: {(
+        FIRDatabase.database().reference().child("UserStore").observe(.childAdded, with: {(
             snapshot) in
             print (snapshot.value)
             if let dictionary = snapshot.value as? [String:AnyObject]{
                 let ResInfo = Res_Info()
-                ResInfo.setValuesForKeysWithDictionary(dictionary)
+                ResInfo.setValuesForKeys(dictionary)
                 self.ResInformation.append(ResInfo)
                 print(self.ResInformation)
                 
-                dispatch_async(dispatch_get_main_queue(), {
+                DispatchQueue.main.async(execute: {
                     self.tableView.reloadData()
             })
             }
             })
-        FIRDatabase.database().reference().child("UserStore").observeEventType(.ChildAdded, withBlock: {
+        FIRDatabase.database().reference().child("UserStore").observe(.childAdded, with: {
             (snapshot) in
                 print (snapshot.key)
                 self.ResUID.append(snapshot.key)
@@ -51,15 +52,15 @@ class ResTableView: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ResInformation.count
     }
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = ResTable.dequeueReusableCellWithIdentifier("RevCell",
-        forIndexPath: indexPath) as! RevCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = ResTable.dequeueReusableCell(withIdentifier: "RevCell",
+        for: indexPath) as! RevCell
         
         //將類別myTableViewMeal轉型為RevCell
     
@@ -67,18 +68,18 @@ class ResTableView: UITableViewController {
         
    
         cell.RevName.text = Rev_Info.StoreID
-        
+        cell.ResTel.text = Rev_Info.StoreTel
         cell.RevLoc.text = Rev_Info.StoreLoc
         
-        cell.ResPic.sd_setImageWithURL(NSURL(string: Rev_Info.StorePic!))
+        cell.ResPic.sd_setImage(with: URL(string: Rev_Info.StorePic!))
         
     
         return cell
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender:AnyObject?){
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?){
         if segue.identifier == "RevToMenuSegue"{
             if let indexPath = self.ResTable.indexPathForSelectedRow{
-                let navVC = segue.destinationViewController as!
+                let navVC = segue.destination as!
                 meal
                let Rev_NameInMeal = ResInformation[indexPath.row]
               

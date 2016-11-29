@@ -9,6 +9,31 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import SDWebImage
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 class MealInformation: UITableViewController {
 
@@ -40,7 +65,10 @@ class MealInformation: UITableViewController {
    
     var Order_ToCart = [Order]()
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Check_GuestUID.removeAll()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,7 +79,7 @@ class MealInformation: UITableViewController {
         self.RvName.text = Rv_Name
         self.RvLoc.text = Rv_Loc
         self.RvTel.text = Rv_Tel
-        self.MiPic.sd_setImageWithURL(NSURL(string: MiPicName))
+        self.MiPic.sd_setImage(with: URL(string: MiPicName))
         
         prepareInfo()
         print(GuestUid)
@@ -60,19 +88,19 @@ class MealInformation: UITableViewController {
     // MARK: - Table view data source
  
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 6
         
         
     }
     func CheckOrder(){
-        FIRDatabase.database().reference().child("UserStore").child(Rv_UID!).child("StoreOrder").observeEventType(.ChildAdded, withBlock: {(snapshot) in
+        FIRDatabase.database().reference().child("UserStore").child(Rv_UID!).child("StoreOrder").observe(.childAdded, with: {(snapshot) in
             print(snapshot.key)
             self.Check_GuestUID.append(snapshot.key)
             
@@ -89,9 +117,9 @@ class MealInformation: UITableViewController {
                     return false
                 }}
             if result == true{
-                let alert = UIAlertController(title: "錯誤", message: "已有訂單在執行", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
+                let alert = UIAlertController(title: "錯誤", message: "已有訂單在執行", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }else{
                 CheckCartResUID()
                 
@@ -102,7 +130,7 @@ class MealInformation: UITableViewController {
         }
     }
 
-    @IBAction func AddCart(sender: AnyObject) {
+    @IBAction func AddCart(_ sender: AnyObject) {
         if Int(MiCount.text!) > 0{
             
             CheckOrder()
@@ -110,10 +138,10 @@ class MealInformation: UITableViewController {
                }
     }
     func AlertToAddCart(){
-        let alert = UIAlertController(title: "新增至購物車", message: "加入購物車", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: { action in self.MealInfoPostCart() }))
-        alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "新增至購物車", message: "加入購物車", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.default, handler: { action in self.MealInfoPostCart() }))
+        alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
 
 }
 //    執行增加購物車
@@ -132,9 +160,9 @@ class MealInformation: UITableViewController {
 //           檢查有沒有同時點兩個餐廳
             if result == false{
                 print("只能點一個餐廳")
-                let alert = UIAlertController(title: "購物車建立失敗", message: "一次只能加一家餐廳至購物車", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
+                let alert = UIAlertController(title: "購物車建立失敗", message: "一次只能加一家餐廳至購物車", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }else{
                AlertToAddCart()
             }
@@ -146,7 +174,11 @@ MealInfoPostCart()
 //        如果資料庫中沒有任何ＵＩＤ直接新增
     }
 //    CheckCartResUID over
+    func change(_ sender: AnyObject){
+    let revealViewControl = self.storyboard?.instantiateViewController(withIdentifier: "mealINFO")as! MealInformation
+    self.present(revealViewControl, animated: true, completion: nil)
     
+    }
 
     func MealInfoPostCart(){
         let MiID_Name = MiID.text!
@@ -156,24 +188,24 @@ MealInfoPostCart()
         let Res_Tel_To_Cart = RvTel.text!
         let Res_Loc_To_Cart = RvLoc.text!
         
-        let CartPostResInfo : [String:AnyObject] = ["CartStoreID" :Res_Name_To_Cart,
-                                                "CartStoreTel" : Res_Tel_To_Cart,
-                                             "CartStoreLoc" : Res_Loc_To_Cart,
-                                             "OrderUIDForStore": Rv_UID,
-                                             "CartStorePic" : StorePicName]
-        let CartPostMealInfo : [String:AnyObject] = ["MealPrice" : MiId_Price,
-                                                     "MealCount" : Mi_Count,
-                                                     "MealID" : MiID_Name,
-                                                     "MealPic" : MiPicName]
+        let CartPostResInfo : [String:AnyObject] = ["CartStoreID" :Res_Name_To_Cart as AnyObject,
+                                                "CartStoreTel" : Res_Tel_To_Cart as AnyObject,
+                                             "CartStoreLoc" : Res_Loc_To_Cart as AnyObject,
+                                             "OrderUIDForStore": Rv_UID as AnyObject,
+                                             "CartStorePic" : StorePicName as AnyObject]
+        let CartPostMealInfo : [String:AnyObject] = ["MealPrice" : MiId_Price as AnyObject,
+                                                     "MealCount" : Mi_Count as AnyObject,
+                                                     "MealID" : MiID_Name as AnyObject,
+                                                     "MealPic" : MiPicName as AnyObject]
         databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").child("CartStore").setValue(CartPostResInfo)
         databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").child("CartMeal").child(MiID_Name).setValue(CartPostMealInfo)
     }
     func prepareInfo(){
-        databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").observeEventType(.ChildAdded , withBlock:
+        databaseOfCart.child("UserGuest").child(GuestUid!).child("GuestCart").observe(.childAdded , with:
             {(snapshot) in
                 if let dictionary = snapshot.value as? [String:String]{
                     let check = Cart()
-                    check.setValuesForKeysWithDictionary(dictionary)
+                    check.setValuesForKeys(dictionary)
                     self.Check_ResUID.append(check.OrderUIDForStore!)
 
                     

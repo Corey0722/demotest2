@@ -45,16 +45,16 @@ class meal : UITableViewController {
     
 
     func GetMenuInfo (){
-        FIRDatabase.database().reference().child("UserStore").child(Res_Uid!).child("StoreMenu").observeEventType(.ChildAdded, withBlock: {(
+        FIRDatabase.database().reference().child("UserStore").child(Res_Uid!).child("StoreMenu").observe(.childAdded, with: {(
             snapshot) in
             if let dictionary = snapshot.value as? [String:AnyObject]{
                 let MenuInfo = MealModel()
                 print(snapshot)
                 
                 
-                MenuInfo.setValuesForKeysWithDictionary(dictionary)
+                MenuInfo.setValuesForKeys(dictionary)
                 self.MenuAll.append(MenuInfo)
-                dispatch_async(dispatch_get_main_queue(), {
+                DispatchQueue.main.async(execute: {
                     self.tableView.reloadData()
                 })
                 
@@ -71,7 +71,7 @@ class meal : UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
         
@@ -79,7 +79,7 @@ class meal : UITableViewController {
         
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return MenuAll.count
         
@@ -88,8 +88,8 @@ class meal : UITableViewController {
     }
     
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = myTableViewMeal.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! MealCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = myTableViewMeal.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MealCell
         //將類別myTableViewMeal轉型為MealCell
         
         let Menu_All = MenuAll[indexPath.row]
@@ -97,17 +97,18 @@ class meal : UITableViewController {
         
         cell.MealPrice.text = Menu_All.MealPrice
         cell.MealName.text = Menu_All.MealID
-        cell.MealPic.sd_setImageWithURL(NSURL(string: Menu_All.MealPic!))
+        print(Menu_All.MealPic)
+        cell.MealPic.sd_setImage(with: URL(string: Menu_All.MealPic!))
  
               return cell
         //回傳cell
     }
 
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MealInformationSegue"{
             if let indexPath = self.myTableViewMeal.indexPathForSelectedRow{
-            let navVC = segue.destinationViewController as! MealInformation
+            let navVC = segue.destination as! MealInformation
    
                 let Menu_All = MenuAll[indexPath.row]
                 navVC.Rv_Name = Rev_Name

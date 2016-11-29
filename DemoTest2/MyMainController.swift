@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 class MyMainController: UITableViewController {
 
-    @IBAction func SignOut(sender: AnyObject) {
+    @IBAction func SignOut(_ sender: AnyObject) {
         try! FIRAuth.auth()?.signOut()
         handleLogin()
     }
@@ -20,7 +20,7 @@ class MyMainController: UITableViewController {
         super.viewDidLoad()
         print(FIRAuth.auth()?.currentUser?.uid)
         if FIRAuth.auth()?.currentUser?.uid == nil{
-            performSelector(#selector(handleLogin) , withObject: nil,
+            perform(#selector(handleLogin) , with: nil,
                             afterDelay:  0)
         }
         else{
@@ -43,8 +43,8 @@ class MyMainController: UITableViewController {
         } catch let louginRrror{
             print (louginRrror)
         }
-        let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-        self.presentViewController(loginController, animated: true, completion: nil)
+        let loginController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        self.present(loginController, animated: true, completion: nil)
     }
 
     /*

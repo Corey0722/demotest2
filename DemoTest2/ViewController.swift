@@ -37,7 +37,7 @@ class ViewController: UIViewController , UITextFieldDelegate ,MKMapViewDelegate 
 //        }
 
     }
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
         
@@ -46,7 +46,7 @@ class ViewController: UIViewController , UITextFieldDelegate ,MKMapViewDelegate 
             mapView.delegate = self
         }
     }
-    override func viewDidAppear(animated: Bool)
+    override func viewDidAppear(_ animated: Bool)
     {
 //        if locationManager == nil {
 //            locationManager = CLLocationManager()
@@ -80,29 +80,29 @@ class ViewController: UIViewController , UITextFieldDelegate ,MKMapViewDelegate 
     }
 
     
-    @IBAction func Sign(sender: AnyObject) {
+    @IBAction func Sign(_ sender: AnyObject) {
         
         
-            FIRAuth.auth()?.signInWithEmail(UserName.text!, password: PassWord.text!, completion: {
+            FIRAuth.auth()?.signIn(withEmail: UserName.text!, password: PassWord.text!, completion: {
                 user, error in
                 if error != nil{
                     
                     
-                    let alert  = UIAlertController(title: "錯誤訊息", message: "密碼錯誤", preferredStyle: UIAlertControllerStyle.Alert)
+                    let alert  = UIAlertController(title: "錯誤訊息", message: "密碼錯誤", preferredStyle: UIAlertControllerStyle.alert)
                     
-                    alert.addAction(UIAlertAction(title: "重試", style: UIAlertActionStyle.Default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "重試", style: UIAlertActionStyle.default, handler: nil))
                     
-                    self.presentViewController(alert, animated: true, completion: nil)
+                    self.present(alert, animated: true, completion: nil)
                     
                 }
                 else{
                     print("正確")
                     
-                    let alert = UIAlertController(title: "歡迎登入", message: "將轉跳至主畫面", preferredStyle: UIAlertControllerStyle.Alert)
-                    alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: { action in self.SignSuccess()}
+                    let alert = UIAlertController(title: "歡迎登入", message: "將轉跳至主畫面", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.default, handler: { action in self.SignSuccess()}
                         ))
                     
-                    self.presentViewController(alert, animated: true, completion: nil)
+                    self.present(alert, animated: true, completion: nil)
                     //                let revealViewControl = self.storyboard?.instantiateViewControllerWithIdentifier("TabBarStoryboard")as! UITabBarController
                     //                self.presentViewController(revealViewControl, animated: true, completion: nil)
                     //                let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -113,9 +113,9 @@ class ViewController: UIViewController , UITextFieldDelegate ,MKMapViewDelegate 
         
     }
     
-    @IBAction func CreateAccount(sender: AnyObject) {
-        let revealViewControl = self.storyboard?.instantiateViewControllerWithIdentifier("CreateEMailView")as! CreateUserEMailViewController
-        self.presentViewController(revealViewControl, animated: true, completion: nil)
+    @IBAction func CreateAccount(_ sender: AnyObject) {
+        let revealViewControl = self.storyboard?.instantiateViewController(withIdentifier: "CreateEMailView")as! CreateUserEMailViewController
+        self.present(revealViewControl, animated: true, completion: nil)
         
   
      
@@ -124,8 +124,8 @@ class ViewController: UIViewController , UITextFieldDelegate ,MKMapViewDelegate 
     func SignSuccess()  {
         
         
-        let revealViewControl = self.storyboard?.instantiateViewControllerWithIdentifier("TabBarStoryboard")as! UITabBarController
-        self.presentViewController(revealViewControl, animated: true, completion: nil)
+        let revealViewControl = self.storyboard?.instantiateViewController(withIdentifier: "TabBarStoryboard")as! UITabBarController
+        self.present(revealViewControl, animated: true, completion: nil)
     }
 
 }

@@ -13,6 +13,7 @@ class RevCell: UITableViewCell {
     
     @IBOutlet weak var ResPic: UIImageView!
    
+    @IBOutlet weak var ResTel: UILabel!
     @IBOutlet weak var RevLoc: UILabel!
     @IBOutlet weak var RevName: UILabel!
     @IBOutlet weak var RevPic: UIImageView!
@@ -20,7 +21,7 @@ class RevCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
 }
