@@ -346,12 +346,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/MyMainController.swift"
-                  timestampString = "502087191.600208"
+                  timestampString = "502089939.185317"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "46"
                   endingLineNumber = "46"
-                  offsetFromSymbolStart = "219">
+                  offsetFromSymbolStart = "216">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -361,12 +361,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/MyMainController.swift"
-                  timestampString = "502087191.602362"
+                  timestampString = "502089939.186886"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "46"
                   endingLineNumber = "46"
-                  offsetFromSymbolStart = "954">
+                  offsetFromSymbolStart = "848">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -458,12 +458,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087191.709965"
+                  timestampString = "502089939.202786"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
                   endingLineNumber = "65"
-                  offsetFromSymbolStart = "2860">
+                  offsetFromSymbolStart = "2464">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -473,12 +473,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087191.712169"
+                  timestampString = "502089939.204342"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
                   endingLineNumber = "66"
-                  offsetFromSymbolStart = "27">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -586,12 +586,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087191.74053"
+                  timestampString = "502089939.223279"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "49"
                   endingLineNumber = "49"
-                  offsetFromSymbolStart = "1381">
+                  offsetFromSymbolStart = "1104">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -601,12 +601,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087191.743949"
+                  timestampString = "502089939.224913"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "49"
                   endingLineNumber = "49"
-                  offsetFromSymbolStart = "23">
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -794,12 +794,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087191.795395"
+                  timestampString = "502089939.259214"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "192"
                   endingLineNumber = "192"
-                  offsetFromSymbolStart = "600">
+                  offsetFromSymbolStart = "516">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -809,12 +809,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087191.798611"
+                  timestampString = "502089939.260768"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "192"
                   endingLineNumber = "192"
-                  offsetFromSymbolStart = "1161">
+                  offsetFromSymbolStart = "944">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -874,12 +874,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087191.812568"
+                  timestampString = "502089939.27059"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "201"
                   endingLineNumber = "201"
-                  offsetFromSymbolStart = "3589">
+                  offsetFromSymbolStart = "2852">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -889,12 +889,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087191.814749"
+                  timestampString = "502089939.272454"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "203"
                   endingLineNumber = "203"
-                  offsetFromSymbolStart = "80">
+                  offsetFromSymbolStart = "72">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1210,12 +1210,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087191.898826"
+                  timestampString = "502089939.330384"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "124"
                   endingLineNumber = "124"
-                  offsetFromSymbolStart = "343">
+                  offsetFromSymbolStart = "312">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1225,12 +1225,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087191.900913"
+                  timestampString = "502089939.331963"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "125"
                   endingLineNumber = "125"
-                  offsetFromSymbolStart = "27">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1274,12 +1274,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087191.910051"
+                  timestampString = "502089939.338822"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "124"
                   endingLineNumber = "124"
-                  offsetFromSymbolStart = "343">
+                  offsetFromSymbolStart = "312">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1289,12 +1289,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087191.913228"
+                  timestampString = "502089939.340383"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "125"
                   endingLineNumber = "125"
-                  offsetFromSymbolStart = "27">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1434,12 +1434,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087191.947733"
+                  timestampString = "502089939.368032"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
                   endingLineNumber = "41"
-                  offsetFromSymbolStart = "383">
+                  offsetFromSymbolStart = "396">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1449,12 +1449,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087191.950225"
+                  timestampString = "502089939.369609"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
                   endingLineNumber = "41"
-                  offsetFromSymbolStart = "2361">
+                  offsetFromSymbolStart = "1896">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1546,12 +1546,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087191.97336"
+                  timestampString = "502089939.385098"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "1937">
+                  offsetFromSymbolStart = "1564">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1561,12 +1561,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087191.975892"
+                  timestampString = "502089939.386687"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
                   endingLineNumber = "38"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1594,12 +1594,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087191.980478"
+                  timestampString = "502089939.390471"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "1937">
+                  offsetFromSymbolStart = "1564">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1609,12 +1609,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087191.983207"
+                  timestampString = "502089939.392258"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
                   endingLineNumber = "38"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1754,12 +1754,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.024343"
+                  timestampString = "502089939.416421"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
                   endingLineNumber = "28"
-                  offsetFromSymbolStart = "15">
+                  offsetFromSymbolStart = "20">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1769,12 +1769,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.027608"
+                  timestampString = "502089939.418313"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
                   endingLineNumber = "30"
-                  offsetFromSymbolStart = "26">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1802,12 +1802,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.031811"
+                  timestampString = "502089939.42195"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "31"
                   endingLineNumber = "31"
-                  offsetFromSymbolStart = "533">
+                  offsetFromSymbolStart = "464">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1817,12 +1817,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.035072"
+                  timestampString = "502089939.423766"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "31"
                   endingLineNumber = "31"
-                  offsetFromSymbolStart = "1049">
+                  offsetFromSymbolStart = "892">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1882,12 +1882,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.050149"
+                  timestampString = "502089939.433625"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "1937">
+                  offsetFromSymbolStart = "1564">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1897,12 +1897,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.053705"
+                  timestampString = "502089939.435187"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
                   endingLineNumber = "38"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1946,12 +1946,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.064486"
+                  timestampString = "502089939.442212"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "39"
                   endingLineNumber = "39"
-                  offsetFromSymbolStart = "2161">
+                  offsetFromSymbolStart = "1748">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1961,12 +1961,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.066877"
+                  timestampString = "502089939.443826"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "39"
                   endingLineNumber = "39"
-                  offsetFromSymbolStart = "158">
+                  offsetFromSymbolStart = "176">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2010,12 +2010,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.074661"
+                  timestampString = "502089939.45084"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
                   endingLineNumber = "42"
-                  offsetFromSymbolStart = "503">
+                  offsetFromSymbolStart = "496">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2025,12 +2025,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.077336"
+                  timestampString = "502089939.452389"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
                   endingLineNumber = "44"
-                  offsetFromSymbolStart = "26">
+                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2058,12 +2058,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.081951"
+                  timestampString = "502089939.456129"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "48"
                   endingLineNumber = "48"
-                  offsetFromSymbolStart = "868">
+                  offsetFromSymbolStart = "860">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2073,12 +2073,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/ResTableView.swift"
-                  timestampString = "502087192.084043"
+                  timestampString = "502089939.457724"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "48"
                   endingLineNumber = "48"
-                  offsetFromSymbolStart = "357">
+                  offsetFromSymbolStart = "368">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2618,12 +2618,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/meal.swift"
-                  timestampString = "502087192.2107"
+                  timestampString = "502089941.464442"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
                   endingLineNumber = "50"
-                  offsetFromSymbolStart = "19">
+                  offsetFromSymbolStart = "32">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2633,12 +2633,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/meal.swift"
-                  timestampString = "502087192.212692"
+                  timestampString = "502089941.466243"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
                   endingLineNumber = "50"
-                  offsetFromSymbolStart = "533">
+                  offsetFromSymbolStart = "476">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2730,12 +2730,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/meal.swift"
-                  timestampString = "502087192.236707"
+                  timestampString = "502089941.497098"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "57"
                   endingLineNumber = "57"
-                  offsetFromSymbolStart = "1416">
+                  offsetFromSymbolStart = "1140">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2745,12 +2745,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/meal.swift"
-                  timestampString = "502087192.24004"
+                  timestampString = "502089941.498805"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "58"
                   endingLineNumber = "58"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2810,12 +2810,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.255914"
+                  timestampString = "502089941.518923"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
                   endingLineNumber = "11"
-                  offsetFromSymbolStart = "35">
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2825,12 +2825,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.258331"
+                  timestampString = "502089941.520749"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
                   endingLineNumber = "11"
-                  offsetFromSymbolStart = "65">
+                  offsetFromSymbolStart = "76">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2840,12 +2840,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.26131"
+                  timestampString = "502089941.522534"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
                   endingLineNumber = "11"
-                  offsetFromSymbolStart = "31">
+                  offsetFromSymbolStart = "36">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2855,12 +2855,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.263918"
+                  timestampString = "502089941.524136"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
                   endingLineNumber = "11"
-                  offsetFromSymbolStart = "69">
+                  offsetFromSymbolStart = "80">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2870,12 +2870,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.266675"
+                  timestampString = "502089941.525755"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
                   endingLineNumber = "11"
-                  offsetFromSymbolStart = "31">
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2903,12 +2903,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.272294"
+                  timestampString = "502089941.545275"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "35">
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2918,12 +2918,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.274753"
+                  timestampString = "502089941.547014"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "65">
+                  offsetFromSymbolStart = "76">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2933,12 +2933,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.27724"
+                  timestampString = "502089941.548544"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "42">
+                  offsetFromSymbolStart = "52">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2948,12 +2948,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.279329"
+                  timestampString = "502089941.550076"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "80">
+                  offsetFromSymbolStart = "96">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -2963,12 +2963,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.281398"
+                  timestampString = "502089941.551605"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "42">
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2996,12 +2996,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.288719"
+                  timestampString = "502089941.57211"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "35">
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3011,12 +3011,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.291496"
+                  timestampString = "502089941.573699"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "65">
+                  offsetFromSymbolStart = "76">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3026,12 +3026,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.294185"
+                  timestampString = "502089941.575487"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "42">
+                  offsetFromSymbolStart = "52">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3041,12 +3041,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.297389"
+                  timestampString = "502089941.577047"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "80">
+                  offsetFromSymbolStart = "96">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3056,12 +3056,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.300591"
+                  timestampString = "502089941.578756"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "42">
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3089,12 +3089,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.306826"
+                  timestampString = "502089941.589129"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "35">
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3104,12 +3104,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.309217"
+                  timestampString = "502089941.590745"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "65">
+                  offsetFromSymbolStart = "76">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3119,12 +3119,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.312029"
+                  timestampString = "502089941.592329"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "42">
+                  offsetFromSymbolStart = "52">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3134,12 +3134,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.314247"
+                  timestampString = "502089941.593966"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "80">
+                  offsetFromSymbolStart = "96">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3149,12 +3149,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.316113"
+                  timestampString = "502089941.595658"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "42">
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3262,12 +3262,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.342684"
+                  timestampString = "502089941.63102"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
                   endingLineNumber = "43"
-                  offsetFromSymbolStart = "669">
+                  offsetFromSymbolStart = "548">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3277,12 +3277,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.345722"
+                  timestampString = "502089941.632667"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
                   endingLineNumber = "44"
-                  offsetFromSymbolStart = "26">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3310,12 +3310,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.350733"
+                  timestampString = "502089941.642299"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
                   endingLineNumber = "45"
-                  offsetFromSymbolStart = "533">
+                  offsetFromSymbolStart = "464">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3325,12 +3325,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.353385"
+                  timestampString = "502089941.644256"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
                   endingLineNumber = "45"
-                  offsetFromSymbolStart = "1049">
+                  offsetFromSymbolStart = "892">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3406,12 +3406,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.373705"
+                  timestampString = "502089941.675074"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "52"
                   endingLineNumber = "52"
-                  offsetFromSymbolStart = "2548">
+                  offsetFromSymbolStart = "2008">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3421,12 +3421,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.376216"
+                  timestampString = "502089941.676708"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "53"
                   endingLineNumber = "53"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3454,12 +3454,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.381135"
+                  timestampString = "502089941.684561"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
                   endingLineNumber = "55"
-                  offsetFromSymbolStart = "1333">
+                  offsetFromSymbolStart = "1176">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3469,12 +3469,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.383268"
+                  timestampString = "502089941.686143"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
                   endingLineNumber = "55"
-                  offsetFromSymbolStart = "2817">
+                  offsetFromSymbolStart = "2224">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3484,12 +3484,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.385556"
+                  timestampString = "502089941.68768"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
                   endingLineNumber = "55"
-                  offsetFromSymbolStart = "2970">
+                  offsetFromSymbolStart = "2336">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3517,12 +3517,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.391454"
+                  timestampString = "502089941.701007"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "57"
                   endingLineNumber = "57"
-                  offsetFromSymbolStart = "19">
+                  offsetFromSymbolStart = "32">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3532,12 +3532,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.394906"
+                  timestampString = "502089941.702801"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "57"
                   endingLineNumber = "57"
-                  offsetFromSymbolStart = "533">
+                  offsetFromSymbolStart = "476">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3565,12 +3565,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.400996"
+                  timestampString = "502089941.711852"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "56"
                   endingLineNumber = "56"
-                  offsetFromSymbolStart = "1498">
+                  offsetFromSymbolStart = "1300">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3580,12 +3580,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.403284"
+                  timestampString = "502089941.713518"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "57"
                   endingLineNumber = "57"
-                  offsetFromSymbolStart = "19">
+                  offsetFromSymbolStart = "32">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3645,12 +3645,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.419246"
+                  timestampString = "502089941.732596"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "64"
                   endingLineNumber = "64"
-                  offsetFromSymbolStart = "2580">
+                  offsetFromSymbolStart = "2256">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3660,12 +3660,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.422327"
+                  timestampString = "502089941.734198"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "64"
                   endingLineNumber = "64"
-                  offsetFromSymbolStart = "1506">
+                  offsetFromSymbolStart = "1220">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3675,12 +3675,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.425373"
+                  timestampString = "502089941.735725"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "64"
                   endingLineNumber = "64"
-                  offsetFromSymbolStart = "1659">
+                  offsetFromSymbolStart = "1332">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -3900,12 +3900,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.500554"
+                  timestampString = "502089941.8166"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "126"
                   endingLineNumber = "126"
-                  offsetFromSymbolStart = "534">
+                  offsetFromSymbolStart = "464">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -3915,12 +3915,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/OrderIsPrepare.swift"
-                  timestampString = "502087192.50421"
+                  timestampString = "502089941.818426"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "126"
                   endingLineNumber = "126"
-                  offsetFromSymbolStart = "1056">
+                  offsetFromSymbolStart = "892">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -4396,12 +4396,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087192.699158"
+                  timestampString = "502089941.968734"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "125"
                   endingLineNumber = "125"
-                  offsetFromSymbolStart = "2021">
+                  offsetFromSymbolStart = "1816">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -4411,12 +4411,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087192.702451"
+                  timestampString = "502089941.970372"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "125"
                   endingLineNumber = "125"
-                  offsetFromSymbolStart = "1506">
+                  offsetFromSymbolStart = "1220">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -4426,12 +4426,12 @@
                   moduleName = "DemoTest2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/corey/Desktop/DemoTest2/DemoTest2/CartTableViewController.swift"
-                  timestampString = "502087192.705969"
+                  timestampString = "502089941.971894"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "125"
                   endingLineNumber = "125"
-                  offsetFromSymbolStart = "1659">
+                  offsetFromSymbolStart = "1332">
                </Location>
             </Locations>
          </BreakpointContent>
